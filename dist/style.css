@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#lp-laptop-container {
+    height: 80vh;
+}
+
+#lp-laptop-box-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    height: 90vh;
+}
+#box-right-container {
+    width: 70%;
+    background-color: aqua;
+}
+#box-left-container {
+    width: 30%;
+    background-color: aquamarine;
+}
+.box img {
+    width: 70%;
+    height: auto;
+
+}
