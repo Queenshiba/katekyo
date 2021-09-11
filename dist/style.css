@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
 }
-
+.top-line {
+    height: 3vh;
+    width: 100%;
+    background-color: #FF7978;
+}
 #lp-laptop-container {
     height: 80vh;
 }
@@ -11,17 +15,22 @@
     display: flex;
     flex-direction: row;
 }
-
+.logo img {
+    height: 100px;
+}
 .box {
     height: 90vh;
 }
 #box-right-container {
-    width: 70%;
-    background-color: aqua;
+    width: 60%;
+    background-image: url(./img/lp.jpg);
+    background-size: 100% auto;
+    /* background-color: #FF7978; */
+    
 }
 #box-left-container {
-    width: 30%;
-    background-color: aquamarine;
+    width: 40%;
+    /* background-color: #D0D7DD; */
 }
 .box img {
     width: 70%;
