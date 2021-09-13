@@ -7,6 +7,12 @@
     width: 100%;
     background-color: #FF7978;
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+}
 #lp-laptop-container {
     height: 80vh;
 }
@@ -23,8 +29,8 @@
 }
 #box-right-container {
     width: 60%;
-    background-image: url(./img/lp.jpg);
-    background-size: 100% auto;
+    background: url(./img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg) no-repeat;
+    background-size: auto 100%;
     /* background-color: #FF7978; */
     
 }
@@ -36,4 +42,9 @@
     width: 70%;
     height: auto;
 
+}
+
+#about-laptop-container {
+    height: 300px;
+    background-color: aqua;
 }
