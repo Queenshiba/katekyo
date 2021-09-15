@@ -12,9 +12,25 @@ nav {
     flex-direction: row;
     justify-content:center ;
     align-items: center;
+    background-color: rgba(163, 144, 129, 0.9);
+    
 }
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-wrap {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #lp-laptop-container {
-    height: 80vh;
+    height: 90vh;
+    width: 100%;
+    background : url(./img/jess-bailey-q10VITrVYUM-unsplash.jpg) no-repeat;
+    background-size: 100% auto;
 }
 
 #lp-laptop-box-wrap {
@@ -22,29 +38,19 @@ nav {
     flex-direction: row;
 }
 .logo img {
-    height: 100px;
+    height: 80px;
 }
 .box {
     height: 90vh;
 }
-#box-right-container {
-    width: 60%;
-    background: url(./img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg) no-repeat;
-    background-size: auto 100%;
-    /* background-color: #FF7978; */
-    
-}
-#box-left-container {
-    width: 40%;
-    /* background-color: #D0D7DD; */
-}
+
 .box img {
     width: 70%;
     height: auto;
 
 }
 
-#about-laptop-container {
+/* #about-laptop-container {
     height: 300px;
     background-color: aqua;
-}
+} */
