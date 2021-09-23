@@ -25,13 +25,16 @@ nav a {
 .menu-wrap {
     width: 80%;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    background-color: #FF7978;
+    /* background-color: greenyellow; */
 }
 .menu-btn-wrap {
     background-color: gold;
     display: flex;
     flex-direction: row;
+
+
 }
 /* menu-wrap Button */
 
@@ -41,13 +44,14 @@ nav a {
     padding: 16px;
     font-size: 16px;
     border: none;
+
 }
 
 /* The container <div> - needed to position the menu-wrap content */
 
 .menu-wrap {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 /* menu-wrap Content (Hidden by Default) */
@@ -87,6 +91,10 @@ nav a {
 .menu-wrap:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+
+
+
 
 #lp-laptop-container {
     height: 80vh;
