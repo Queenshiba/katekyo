@@ -8,7 +8,7 @@
     width: 100%;
     background-color: #FF7978;
 }
-
+/* nav bar */
 nav {
     display: flex;
     flex-direction: row;
@@ -111,7 +111,7 @@ nav a {
     background-size: cover;
     position: relative;
 }
-
+/* landing page */
 #lp-laptop-box-wrap {
     display: flex;
     flex-direction: row;
@@ -135,6 +135,7 @@ nav a {
     height: auto;
 }
 
+/* space between lp and about */
 #color-space {
     height: 10vh;
     background-color: #ff78786e
@@ -143,7 +144,7 @@ nav a {
 #about-laptop-container {
     background-color: aqua;
 }
-
+/* features */
 #features-laptop-container {
     display: flex;
     height: 30vh;
