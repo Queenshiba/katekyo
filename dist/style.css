@@ -143,6 +143,7 @@ nav a {
 
 #about-laptop-container {
     background-color: aqua;
+    height: 30vh;
 }
 /* features */
 #features-laptop-container {
@@ -175,7 +176,7 @@ nav a {
 }
 
 .slide-feature h2 {
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .slide-feature h3 {
