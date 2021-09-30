@@ -162,39 +162,41 @@ nav a {
     display: flex;
     /* height: 30vh; */
 }
-
-.features-left {
-    width: 30%;
-    background-color: aquamarine;
-}
-
-.features-right {
-    background-color: yellow;
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-}
-
-.slides {
-    display: flex;
-    flex-direction: row;
-}
-
-.slide-feature {
+.feature-wrap-container{
     display: flex;
     flex-direction: column;
-    height: 300px;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+}
+.feature-wrap {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 100%;
+}
+.circle-btn-wrap {
+    width: 50%;
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textbox{
+    background-color: gray;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); 
     width: 300px;
-}
+    height: 300px;
+    background: aqua;
 
-.slide-feature h2 {
-    font-size: 1.5em;
-}
-
-.slide-feature h3 {
-    font-size: 0.3em;
-}
-
-.slide-feature h4 {
-    font-size: 0.1em;
 }
