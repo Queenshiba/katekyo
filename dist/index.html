@@ -154,49 +154,37 @@
         <button>> more</button>
     </div>
 
-    <section class="carousel" aria-label="Gallery">
-        <ol class="carousel__viewport">
-            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper">
-                    <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                    <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                </div>
-            </li>
-            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-            </li>
-            <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                <div class="carousel__snapper"></div>
-                <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-            </li>
-        </ol>
-        <aside class="carousel__navigation">
-            <ol class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                </li>
-            </ol>
-        </aside>
-    </section>
+  
+    <!-- Slideshow container -->
+<div class="slideshow-container">
 
-    <div class="test"></div>
+    <!-- Full-width slides/quotes -->
+    <div class="mySlides">
+      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+      <p class="author">- John Keats</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+      <p class="author">- Ernest Hemingway</p>
+    </div>
+  
+    <div class="mySlides">
+      <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+      <p class="author">- Thomas A. Edison</p>
+    </div>
+  
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  
+  <!-- Dots/bullets/indicators -->
+  <div class="dot-container">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
 
     </div>
 </body>
