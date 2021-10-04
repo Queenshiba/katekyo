@@ -9,6 +9,7 @@
     background-color: #FF7978;
 }
 
+
 /* nav bar */
 
 nav {
@@ -37,6 +38,7 @@ nav a {
     display: flex;
     flex-direction: row;
 }
+
 
 /* menu-wrap Button */
 
@@ -73,7 +75,8 @@ nav a {
     padding: 0 50px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     background-color: red;
 }
 
@@ -114,6 +117,7 @@ nav a {
     position: relative;
 }
 
+
 /* landing page */
 
 #lp-laptop-box-wrap {
@@ -139,12 +143,14 @@ nav a {
     height: auto;
 }
 
+
 /* space between lp and about */
 
 #color-space {
     height: 10vh;
     background-color: #ff78786e
 }
+
 
 /* about */
 
@@ -166,6 +172,7 @@ nav a {
     width: 30%;
     height: 400px;
 }
+
 
 /* features */
 
@@ -216,12 +223,34 @@ nav a {
     background: aqua;
 }
 
+
+/* price and howtostart */
+
+.price-howtostart-wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.price-container {
+    width: 100%;
+    background-color: #FF7978;
+    height: 300px;
+}
+
+.howtostart-container {
+    width: 100%;
+    background-color: yellow;
+    height: 300px;
+}
+
+
 /* Slideshow container */
 
 .slideshow-container {
     position: relative;
     background: #f1f1f1f1;
 }
+
 
 /* Slides */
 
@@ -231,9 +260,11 @@ nav a {
     text-align: center;
 }
 
+
 /* Next & previous buttons */
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -247,6 +278,7 @@ nav a {
     user-select: none;
 }
 
+
 /* Position the "next button" to the right */
 
 .next {
@@ -255,12 +287,15 @@ nav a {
     border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
 
 /* The dot/bullet/indicator container */
 
@@ -269,6 +304,7 @@ nav a {
     padding: 20px;
     background: #ddd;
 }
+
 
 /* The dots/bullets/indicators */
 
@@ -283,17 +319,21 @@ nav a {
     transition: background-color 0.6s ease;
 }
 
+
 /* Add a background color to the active dot/circle */
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
+
 
 /* Add an italic font style to all quotes */
 
 q {
     font-style: italic;
 }
+
 
 /* Add a blue color to the author */
 
