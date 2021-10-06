@@ -340,3 +340,16 @@ q {
 .author {
     color: cornflowerblue;
 }
+
+
+/* contact */
+
+.contact-container {
+    height: 500px;
+    background-color: beige;
+}
+
+footer {
+    height: 300px;
+    background-color: #FF7978;
+}
