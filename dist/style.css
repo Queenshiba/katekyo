@@ -234,13 +234,13 @@ nav a {
 .price-container {
     width: 100%;
     background-color: #FF7978;
-    height: 300px;
+    height: 500px;
 }
 
 .howtostart-container {
     width: 100%;
     background-color: yellow;
-    height: 300px;
+    height: 500px;
 }
 
 
@@ -256,7 +256,7 @@ nav a {
 
 .mySlides {
     display: none;
-    padding: 80px;
+    padding: 200px;
     text-align: center;
 }
 
@@ -347,9 +347,14 @@ q {
 .contact-container {
     height: 500px;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+/* footer */
 footer {
-    height: 300px;
+    height: 30vh;
     background-color: #FF7978;
 }
