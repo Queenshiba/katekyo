@@ -357,4 +357,17 @@ q {
 footer {
     height: 30vh;
     background-color: #FF7978;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.lineinfooter {
+    width: 100%;
+    height: 300px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
