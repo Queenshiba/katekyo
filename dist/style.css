@@ -73,12 +73,12 @@ nav a {
     font-family: inherit;
     margin: 0;
     height: 80px;
-    min-width: 10vw;
     /* padding: 0 50px; */
     border-bottom: 5px solid transparent;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     border-bottom: 5px solid rgb(95, 95, 95);
 }
 
@@ -406,6 +406,7 @@ q {
     justify-content: center;
     align-items: center;
 }
+
 
 /* footer */
 
