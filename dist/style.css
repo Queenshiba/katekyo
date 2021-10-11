@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Sawarabi+Gothic&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif
+    font-family: 'Noto Serif JP', serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .top-line {
@@ -40,15 +41,6 @@ nav a {
     flex-direction: row;
 }
 
-<<<<<<< HEAD
-=======
-#contact img {
-    height: 30px;
-    display: block;
-}
-
-
->>>>>>> refs/remotes/origin/main
 /* menu-wrap Button */
 
 .navbar {
@@ -68,6 +60,7 @@ nav a {
 .dropdown {
     float: left;
     overflow: hidden;
+
 }
 
 .dropdown .dropbtn {
@@ -75,23 +68,18 @@ nav a {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
     background-color: inherit;
     font-family: inherit;
     margin: 0;
     height: 80px;
+    min-width: 10vw;
     /* padding: 0 50px; */
     border-bottom: 5px solid transparent;
 }
 
-<<<<<<< HEAD
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-=======
-.navbar a:hover,
-.dropdown:hover .dropbtn {
     border-bottom: 5px solid rgb(95, 95, 95);
->>>>>>> refs/remotes/origin/main
 }
 
 .dropdown-content {
@@ -120,6 +108,38 @@ nav a {
     display: block;
 }
 
+.dropbtn img {
+    height: 30px;
+}
+
+/* switching eng to jp */
+
+.dropbtn:hover p {
+    display: none;
+}
+.dropbtn:hover img {
+    display: none;
+}
+#dropbtn-about:hover:before {
+    content: "KATEKYOとは";
+}
+
+#dropbtn-case:hover:before {
+    content: "授業実例";
+}
+
+#dropbtn-pricing:hover:before {
+    content: "料金システム";
+}
+
+#dropbtn-join:hover:before {
+    content: "始め方";
+}
+#dropbtn-contact:hover:before {
+    content: "お問い合わせ";
+}
+/* landing page */
+
 #lp-laptop-container {
     height: 80vh;
     width: 100%;
@@ -130,8 +150,6 @@ nav a {
     background-size: cover;
     position: relative;
 }
-
-/* landing page */
 
 #lp-laptop-box-wrap {
     display: flex;
@@ -304,7 +322,7 @@ nav a {
     text-align: center;
 }
 
-.mySlides > p {
+.mySlides>p {
     font-size: 1.5em;
 }
 
@@ -388,7 +406,6 @@ q {
     justify-content: center;
     align-items: center;
 }
-
 
 /* footer */
 
