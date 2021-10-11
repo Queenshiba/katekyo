@@ -73,6 +73,7 @@ nav a {
     font-family: inherit;
     margin: 0;
     height: 80px;
+    min-width: 10vh;
     /* padding: 0 50px; */
     border-bottom: 5px solid transparent;
 }
