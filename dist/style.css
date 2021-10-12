@@ -12,6 +12,7 @@
     background-color: #FF7978;
 }
 
+
 /* nav bar */
 
 nav {
@@ -41,6 +42,7 @@ nav a {
     flex-direction: row;
 }
 
+
 /* menu-wrap Button */
 
 .navbar {
@@ -60,7 +62,6 @@ nav a {
 .dropdown {
     float: left;
     overflow: hidden;
-
 }
 
 .dropdown .dropbtn {
@@ -113,14 +114,17 @@ nav a {
     height: 30px;
 }
 
+
 /* switching eng to jp */
 
 .dropbtn:hover p {
     display: none;
 }
+
 .dropbtn:hover img {
     display: none;
 }
+
 #dropbtn-about:hover:before {
     content: "KATEKYOとは";
 }
@@ -136,9 +140,12 @@ nav a {
 #dropbtn-join:hover:before {
     content: "始め方";
 }
+
 #dropbtn-contact:hover:before {
     content: "お問い合わせ";
 }
+
+
 /* landing page */
 
 #lp-laptop-container {
@@ -206,12 +213,14 @@ nav a {
     height: auto;
 }
 
+
 /* space between lp and about */
 
 #color-space {
     height: 10vh;
     background-color: #ff78786e
 }
+
 
 /* about */
 
@@ -238,6 +247,7 @@ nav a {
     align-items: center;
     padding: 0 10px;
 }
+
 
 /* features */
 
@@ -288,6 +298,7 @@ nav a {
     background: aqua;
 }
 
+
 /* price and howtostart */
 
 .price-howtostart-wrap {
@@ -307,6 +318,7 @@ nav a {
     height: 500px;
 }
 
+
 /* Slideshow container */
 
 .slideshow-container {
@@ -315,21 +327,28 @@ nav a {
     height: 400px;
 }
 
+
 /* Slides */
 
 .mySlides {
-    display: none;
-    padding: 200px;
+    /* display: none; */
     text-align: center;
+    /* height: 100%; */
+    background-color: aqua;
 }
 
 .mySlides>p {
     font-size: 1.5em;
+    text-align: center;
+    background-color: blueviolet;
+    margin-top: auto;
 }
+
 
 /* Next & previous buttons */
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -343,6 +362,7 @@ nav a {
     user-select: none;
 }
 
+
 /* Position the "next button" to the right */
 
 .next {
@@ -351,12 +371,15 @@ nav a {
     border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
 
 /* The dot/bullet/indicator container */
 
@@ -365,6 +388,7 @@ nav a {
     padding: 20px;
     background: #ddd;
 }
+
 
 /* The dots/bullets/indicators */
 
@@ -379,11 +403,14 @@ nav a {
     transition: background-color 0.6s ease;
 }
 
+
 /* Add a background color to the active dot/circle */
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
+
 
 /* Add an italic font style to all quotes */
 
@@ -391,11 +418,13 @@ q {
     font-style: italic;
 }
 
+
 /* Add a blue color to the author */
 
 .author {
     color: cornflowerblue;
 }
+
 
 /* contact */
 
