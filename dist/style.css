@@ -7,7 +7,7 @@
 }
 
 .top-line {
-    height: 3vh;
+    min-height: 2em;
     width: 100%;
     background-color: #FF7978;
 }
@@ -20,7 +20,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: rgba(163, 144, 129, 0.9);
-    height: 80px;
+    height: 100px;
 }
 
 nav a {
@@ -72,7 +72,7 @@ nav a {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    height: 80px;
+    height: 100px;
     min-width: 10vh;
     /* padding: 0 50px; */
     border-bottom: 5px solid transparent;
@@ -155,7 +155,7 @@ nav a {
 #lp-laptop-box-wrap {
     display: flex;
     flex-direction: column;
-    height: 60%;
+    height: 90%;
     justify-content: center;
     align-items: center;
 }
@@ -166,6 +166,8 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
+    font-size: 2em;
 }
 
 #contact-btn {
