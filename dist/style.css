@@ -432,14 +432,28 @@ q {
 
 .contact-container {
     height: 500px;
+    width: 100vw;
     background-color: beige;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.emailwrap {
+    width: 100%;
 
-
+}
+#copyEmailText {
+    min-width: 200px;
+    text-align: center;
+    border: none;
+}
+#copyEmailBtn {
+    background-color: hotpink;
+    border: none;
+    height: 40px;
+    width: 60px;
+}
 /* footer */
 
 footer {
