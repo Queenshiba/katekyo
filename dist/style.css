@@ -439,21 +439,32 @@ q {
     justify-content: center;
     align-items: center;
 }
+.contact-wrap, .emailwrap,.openEmail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-wrap h2 {
+    padding: 0 20px;
+}
 .emailwrap {
     width: 100%;
 
 }
-#copyEmailText {
+#copyEmailText,.openEmail {
     min-width: 200px;
     text-align: center;
     border: none;
+    height: 50px;
 }
 #copyEmailBtn {
     background-color: hotpink;
     border: none;
     height: 40px;
-    width: 60px;
+    width: 50px;
 }
+
 /* footer */
 
 footer {
