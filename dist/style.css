@@ -290,6 +290,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
 }
 
 .circle {
@@ -308,16 +309,18 @@ nav a {
     flex-direction: row;
 }
 
-.price-container {
+#price-container {
     width: 100%;
     background-color: #FF7978;
     height: 500px;
+    padding:0 30px;
 }
 
-.howtostart-container {
+#howtostart-container {
     width: 100%;
     background-color: yellow;
     height: 500px;
+    padding:0 30px;
 }
 
 
