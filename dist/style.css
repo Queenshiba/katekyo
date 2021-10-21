@@ -12,7 +12,11 @@
     background-color: #FF7978;
 }
 
-
+.title-line {
+height: 50px;
+background-color: black;
+width: 5px;
+}
 /* nav bar */
 
 nav {
