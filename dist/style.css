@@ -11,17 +11,20 @@
     width: 100%;
     background-color: #FF7978;
 }
+
 .title-wrap {
     display: flex;
     flex-direction: row;
     width: 50%;
 }
+
 .title-line {
-height: 100%;
-background-color: black;
-width: 5px;
-margin-right: 5%;
+    height: 100%;
+    background-color: black;
+    width: 5px;
+    margin-right: 5%;
 }
+
 /* nav bar */
 
 nav {
@@ -50,7 +53,6 @@ nav a {
     display: flex;
     flex-direction: row;
 }
-
 
 /* menu-wrap Button */
 
@@ -88,8 +90,7 @@ nav a {
     border-bottom: 5px solid transparent;
 }
 
-.navbar a:hover,
-.dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     border-bottom: 5px solid rgb(95, 95, 95);
 }
 
@@ -123,7 +124,6 @@ nav a {
     height: 30px;
 }
 
-
 /* switching eng to jp */
 
 .dropbtn:hover p {
@@ -153,7 +153,6 @@ nav a {
 #dropbtn-contact:hover:before {
     content: "お問い合わせ";
 }
-
 
 /* landing page */
 
@@ -224,14 +223,12 @@ nav a {
     height: auto;
 }
 
-
 /* space between lp and about */
 
 #color-space {
     height: 10vh;
     background-color: #ff78786e
 }
-
 
 /* about */
 
@@ -258,7 +255,6 @@ nav a {
     align-items: center;
     padding: 0 10px;
 }
-
 
 /* features */
 
@@ -299,7 +295,6 @@ nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
 }
 
 .circle {
@@ -309,7 +304,6 @@ nav a {
     height: 300px;
     background: aqua;
 }
-
 
 /* price and howtostart */
 
@@ -322,16 +316,15 @@ nav a {
     width: 100%;
     background-color: #FF7978;
     height: 500px;
-    padding:0 30px;
+    padding: 0 30px;
 }
 
 #howtostart-container {
     width: 100%;
     background-color: yellow;
     height: 500px;
-    padding:0 30px;
+    padding: 0 30px;
 }
-
 
 /* Slideshow container */
 
@@ -339,14 +332,12 @@ nav a {
     position: relative;
     background: #f1f1f1f1;
     height: 400px;
-
 }
-
 
 /* Slides */
 
 .mySlides {
-    display: none;
+    /* display: none; */
     text-align: center;
     height: 400px;
     background-color: aqua;
@@ -358,15 +349,17 @@ nav a {
 .mySlides>p {
     font-size: 1.5em;
     text-align: center;
-    background-color: blueviolet;
-    /* height: 100%; */
+    /* background-color: blueviolet; */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
 }
-
 
 /* Next & previous buttons */
 
-.prev,
-.next {
+.prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -380,7 +373,6 @@ nav a {
     user-select: none;
 }
 
-
 /* Position the "next button" to the right */
 
 .next {
@@ -389,15 +381,12 @@ nav a {
     border-radius: 3px 0 0 3px;
 }
 
-
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
-
 
 /* The dot/bullet/indicator container */
 
@@ -406,7 +395,6 @@ nav a {
     padding: 20px;
     background: #ddd;
 }
-
 
 /* The dots/bullets/indicators */
 
@@ -421,14 +409,11 @@ nav a {
     transition: background-color 0.6s ease;
 }
 
-
 /* Add a background color to the active dot/circle */
 
-.active,
-.dot:hover {
+.active, .dot:hover {
     background-color: #717171;
 }
-
 
 /* Add an italic font style to all quotes */
 
@@ -436,13 +421,11 @@ q {
     font-style: italic;
 }
 
-
 /* Add a blue color to the author */
 
 .author {
     color: cornflowerblue;
 }
-
 
 /* contact */
 
@@ -455,25 +438,29 @@ q {
     justify-content: center;
     align-items: center;
 }
-.contact-wrap, .emailwrap,.openEmail {
+
+.contact-wrap, .emailwrap, .openEmail {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .contact-wrap h2 {
     padding: 0 20px;
 }
+
 .emailwrap {
     width: 100%;
-
 }
-#copyEmailText,.openEmail {
+
+#copyEmailText, .openEmail {
     min-width: 200px;
     text-align: center;
     border: none;
     height: 50px;
 }
+
 #copyEmailBtn {
     background-color: hotpink;
     border: none;
