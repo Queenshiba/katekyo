@@ -454,6 +454,11 @@ q {
     width: 90px;
     margin-left: 10%;
 }
+.textbox img {
+    height: auto;
+    width: 100px;
+
+}
 
 /* contact */
 
