@@ -255,7 +255,9 @@ nav a {
     justify-content: center;
     padding: 10px 30px;
 }
-
+.about-wrap img{
+    width: 100px;
+}
 .about-wrap h3 {
     padding-left: 10%;
 }
