@@ -494,12 +494,16 @@ q {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
 .contact-wrap h2 {
     padding: 0 20px;
 }
-
+.title-line h3 {
+    padding: 0 20px;
+    margin-left: 5%;
+}
 .emailwrap {
     width: 100%;
 }
