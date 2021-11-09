@@ -33,3 +33,22 @@ function showSlides(n) {
 }
 // window.setInterval(change, 1000)
 // window.setInterval(plusSlides, 1100)
+
+
+// copyEmailBtn
+// let copyEmailBtn = document.getElementById('copyEmailBtn');
+
+function copyEmailBtn() {
+    /* Get the text field */
+    let copyText = document.getElementById("copyEmailText");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+    /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+}
