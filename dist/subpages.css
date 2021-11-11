@@ -18,14 +18,39 @@
     align-items: center;
     justify-self: center;
 }
-
+.img-right {
+    background-color: rebeccapurple;
+    
+}
+.img-right > div{
+    background-color: brown;
+    width: 50%;
+}
+.img-right > img{
+    width: 40%;
+    height: auto;
+    padding: 5% 3%;
+}
+.img-left {
+    background-color: rosybrown;
+}
+.img-left > div{
+    background-color: brown;
+    width: 50%;
+}
+.img-left > img{
+    width: 40%;
+    height: auto;
+    padding: 5% 3%;
+}
 .path {
     display: flex;
     flex-direction: row;
 }
 
 .feature-text-wrap {
-    width: 60%;
+    width: 50%;
+    padding-left: 5%;
 }
 
 .title {
