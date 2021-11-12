@@ -13,36 +13,53 @@
     justify-self: center;
 }
 
+.top-title-wrap {
+    background-color: beige;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.top-title-wrap a {
+    color: black;
+    padding: 0 10px;
+}
+
 .feature-wrap {
     width: 90%;
     align-items: center;
     justify-self: center;
 }
+
 .img-right {
     background-color: rebeccapurple;
-    
 }
-.img-right > div{
+
+.img-right>div {
     background-color: brown;
     width: 50%;
 }
-.img-right > img{
+
+.img-right>img {
     width: 40%;
     height: auto;
     padding: 5% 3%;
 }
+
 .img-left {
     background-color: rosybrown;
 }
-.img-left > div{
+
+.img-left>div {
     background-color: brown;
     width: 50%;
 }
-.img-left > img{
+
+.img-left>img {
     width: 40%;
     height: auto;
     padding: 5% 3%;
 }
+
 .path {
     display: flex;
     flex-direction: row;
