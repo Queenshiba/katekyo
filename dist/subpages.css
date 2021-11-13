@@ -40,7 +40,7 @@
 }
 
 .img-right>img {
-    width: 40%;
+    max-width: 40%;
     height: auto;
     padding: 5% 3%;
 }
@@ -55,7 +55,7 @@
 }
 
 .img-left>img {
-    width: 40%;
+    max-width: 40%;
     height: auto;
     padding: 5% 3%;
 }
@@ -69,7 +69,12 @@
     width: 50%;
     padding-left: 5%;
 }
+.feature-text-wrap p{
 
+    padding-left: 5%;
+}
 .title {
-    width: 40%;
+    width: 100%;
+    padding-left: 5%;
+    border-left: 5px solid black;
 }
