@@ -237,7 +237,7 @@ nav a {
 /* about */
 
 #about-laptop-container {
-    background-color: honeydew;
+    /* background-color: honeydew; */
     height: 500px;
 }
 
@@ -250,7 +250,7 @@ nav a {
 }
 
 .about-wrap {
-    background-color: bisque;
+    background-color: rgba(163, 144, 129, 0.5);
     width: 30%;
     height: 400px;
     display: flex;
@@ -287,6 +287,10 @@ nav a {
     align-items: center;
     height: max-content;
     width: 100%;
+}
+
+#odd {
+    background-color: #ff787885;
 }
 
 .feature-wrap {
@@ -330,7 +334,6 @@ nav a {
     behavior: url(PIE.htc);
     width: 300px;
     height: 300px;
-    background: aqua;
     /* margin-bottom: 3%; */
 }
 
@@ -353,14 +356,14 @@ nav a {
 
 #price-container {
     width: 100%;
-    background-color: #FF7978;
+    background-color: #ff78787c;
     height: 500px;
     padding: 0 30px;
 }
 
 #howtostart-container {
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 500px;
     padding: 0 30px;
 }
@@ -369,7 +372,6 @@ nav a {
 
 .slideshow-container {
     position: relative;
-    background: #f1f1f1f1;
     height: 400px;
 }
 
@@ -379,7 +381,7 @@ nav a {
     /* display: none; */
     text-align: center;
     height: 400px;
-    background-color: rgba(163, 144, 129, 0.9);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -388,12 +390,12 @@ nav a {
 .mySlides>p {
     font-size: 1.5em;
     text-align: center;
-    background-color: rgb(219, 219, 219, 0.5);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 60%;
+    font-style: italic;
 }
 
 /* Next & previous buttons */
@@ -476,8 +478,7 @@ q {
 .textbox img {
     height: auto;
     width: 100px;
-margin-left: auto;
-
+    margin-left: auto;
 }
 
 /* contact */
@@ -503,10 +504,12 @@ margin-left: auto;
 .contact-wrap h2 {
     padding: 0 20px;
 }
+
 .title-line h3 {
     padding: 0 20px;
     margin-left: 5%;
 }
+
 .emailwrap {
     width: 100%;
 }
