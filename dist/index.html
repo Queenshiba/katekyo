@@ -8,6 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
     <title>KATEKYO</title>
 </head>
@@ -16,8 +20,9 @@
     <div id="lp-laptop-container">
 
         <div class="top-line"></div>
-        <nav class="">
-            <div class="menu-wrap">
+        <nav>
+            <!-- navbar -->
+            <div class="nav-menu-wrap">
                 <div class="dropdown">
                     <button class="dropbtn" id="dropbtn-about">
                         <p>ABOUT</p>
@@ -25,7 +30,7 @@
                     </button>
                     <div class="dropdown-content">
                         <a href="service.html">サービス内容</a>
-                        <a href="#">受講を考えている皆様へ</a>
+                        <a href="#">特徴</a>
                         <a href="#">講師紹介</a>
                     </div>
                 </div>
@@ -35,7 +40,6 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="feature.html">特徴</a>
                         <a href="sample.html">授業例</a>
                         <a href="#experience ">経験談</a>
 
@@ -46,7 +50,7 @@
             <div class="logo">
                 <img src="./img/kakekyo-logo-new-circle.png" alt="">
             </div>
-            <div class="menu-wrap">
+            <div class="nav-menu-wrap">
                 <div class="dropdown">
 
                     <button class="dropbtn" id="dropbtn-pricing">
@@ -54,8 +58,7 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">料金体系</a>
-                        <a href="#">支払い方法</a>
+                        <a href="#">受講料</a>
 
                     </div>
                 </div>
@@ -65,8 +68,8 @@
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
-                        <a href="#">入会～授業開始</a>
-                        <a href="#">授業受講</a>
+                        <a href="#">入会にあたって</a>
+                        <a href="#">受講までの流れ</a>
 
                     </div>
                 </div>
@@ -90,106 +93,96 @@
         </div>
 
     </div>
-    <div id="color-space"></div>
-    <div id="about-laptop-container">
-        <h1>KATEKYOとは</h1>
-        <div class="about-wrap-container">
-            <div class="about-wrap">
-
-                <div class="title-wrap">
-                    <div class="title-line">
-                        <h2>サービス内容</h2>
-                    </div>
-
-                </div>
-                <img src="./img/books.png" alt="">
-
-
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at!</h3>
-                <button>> more</button>
+    <!-- service-container -->
+    <div id="service-container">
+        <div class="left-wrap">
+            <div class="title-wrap">
+                <h3>サービス内容</h3>
+                <h2>SERVICE</h2>
             </div>
-            <div class="about-wrap">
-                <div class="title-wrap">
-                    <div class="title-line">
-                        <h2>特徴</h2>
-                    </div>
+            <a href="#">もっと見る</a>
+        </div>
+        <div class="right-wrap"></div>
+    </div>
 
+    <!-- feature-container -->
+    <div id="feature-container">
+        <div class="title-wrap">
+            <h3>サービス内容</h3>
+            <h2>SERVICE</h2>
+        </div>
+        <div id="feature-wrap">
+            <div id="feature-left">
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
                 </div>
-                <img src="./img/support.png" alt="">
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, at!</h3>
-                <button>> more</button>
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
+            </div>
+            <div id="feature-right">
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
+                <div class="feature-list-wrap">
+                    <img src="./img/books.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dolore!</p>
+                </div>
             </div>
         </div>
+
+        <a href="#">もっと見る</a>
     </div>
-    <div id="features-laptop-container">
 
-        <div class="feature-wrap-container">
-            <div class="feature-wrap" id="odd">
-                <div class="textbox">
-                    <div class="title-wrap">
-                        <div class="title-line">
-                            <h2>授業例</h2>
-                        </div>
 
-                    </div>
-
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, aliquam!</h3>
-                </div>
-                <div class="circle-btn-wrap">
-                    <!-- <div class="circle" id="circle1"></div> -->
-                    <img src="./img/img-computer.jpg" alt="">
-                    <button>> more</button>
-                </div>
-
+    <!-- sample, instractor, pricing -->
+    <div id="sample-instractor-pricing-container">
+        <div class="box" id="sample-wrap">
+            <div class="title-wrap">
+                <h3>サービス内容</h3>
+                <h2>SERVICE</h2>
             </div>
-            <div class="feature-wrap">
-                <div class="circle-btn-wrap">
-                    <img src="./img/img-woman.jpg" alt="">
-                    <!-- <div class="circle" id="circle2"></div> -->
-                    <button>> more</button>
-                </div>
-                <div class="textbox">
-                    <div class="title-wrap">
-                        <div class="title-line">
-                            <h2>講師紹介</h2>
-                        </div>
-
-                    </div>
-
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, aliquam!</h3>
-                </div>
-
-
+            <a href="#">MORE</a>
+        </div>
+        <div class="box" id="instractor-wrap">
+            <div class="title-wrap">
+                <h3>サービス内容</h3>
+                <h2>SERVICE</h2>
             </div>
-            <div class="feature-wrap" id="odd">
-                <div class="textbox">
-                    <div class="title-wrap">
-                        <div class="title-line">
-                            <h2>オンライン授業</h2>
-                        </div>
-
-                    </div>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, aliquam!</h3>
-                </div>
-                <div class="circle-btn-wrap">
-                    <img src="./img/img-woman.jpg" alt="">
-                    <!-- <div class="circle" id="circle3"></div> -->
-                    <button>> more</button>
-                </div>
-
+            <a href="#">MORE</a>
+        </div>
+        <div class="box" id="pricing-wrap">
+            <div class="title-wrap">
+                <h3>サービス内容</h3>
+                <h2>SERVICE</h2>
             </div>
+            <a href="#">MORE</a>
         </div>
     </div>
 
 
 
 
-
-
-
-
-
-    <!-- Slideshow container -->
+    <!-- review Slideshow container -->
     <div class="slideshow-container" id="experience">
 
         <!-- Full-width slides/quotes -->
@@ -232,34 +225,20 @@
     </div>
 
     </div>
-    <div class="price-howtostart-wrap">
-        <div id="price-container" class="textbox">
-            <div class="title-wrap">
-                <div class="title-line">
-                    <h2>授業料</h2>
-                </div>
 
+    <div id="join-container">
+        <div class="left-wrap">
 
-            </div>
-            <img src="./img/yen.png" alt="">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a rerum nesciunt magnam atque possimus
-                asperiores alias recusandae exercitationem minus!</h3>
-            <button>> more</button>
         </div>
-
-        <div id="howtostart-container" class="textbox">
+        <div class="right-wrap">
             <div class="title-wrap">
-                <div class="title-line">
-                    <h2>受講の始め方</h2>
-                </div>
-
+                <h3>サービス内容</h3>
+                <h2>SERVICE</h2>
             </div>
-            <img src="./img/online-lesson.png" alt="">
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit a rerum nesciunt magnam atque possimus
-                asperiores alias recusandae exercitationem minus!</h3>
-            <button>> more</button>
+            <a href="#">もっと見る</a>
         </div>
     </div>
+
     <div class="contact-container">
         <div class="title-wrap">
             <div class="title-line">
@@ -297,12 +276,11 @@
         <div class="lineinfooter">
             <p>料金システム</p>
             <a href="#">料金体系</a>
-            <a href="#">始め方</a>
         </div>
         <div class="lineinfooter">
             <p>はじめかた</p>
-            <a href="#">入会～授業開始まで</a>
-            <a href="#">受講</a>
+            <a href="#">入会にあたって</a>
+            <a href="#">受講までの流れ</a>
         </div>
     </footer>
 
