@@ -221,10 +221,10 @@ nav a {
 /* service */
 
 #service-container {
-    height: 50vh;
+    height: 30vh;
     display: flex;
     flex-direction: row;
-    padding-top: 5em;
+    padding-top: 10em;
 }
 
 .left-wrap {
@@ -238,9 +238,10 @@ background-color: turquoise;
 
 .right-wrap {
     width: 50%;
-    background: url(./img/element5-digital-OyCl7Y4y0Bk-unsplash.jpg) no-repeat;
+    background: url(./img/service.jpg) no-repeat;
     background-size: contain;
     background-position: right;
+    margin-left: 3em;
 }
 
 #service-container .title-wrap {
