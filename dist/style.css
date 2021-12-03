@@ -227,16 +227,16 @@ nav a {
     padding-top: 10em;
 }
 
-.left-wrap {
+#service-container .left-wrap {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-background-color: turquoise;
+    background-color: turquoise;
 }
 
-.right-wrap {
+#service-container .right-wrap {
     width: 50%;
     background: url(./img/service.jpg) no-repeat;
     background-size: contain;
@@ -244,7 +244,7 @@ background-color: turquoise;
     margin-left: 3em;
 }
 
-#service-container .title-wrap {
+.title-wrap {
     height: 40%;
 }
 
@@ -288,6 +288,7 @@ background-color: turquoise;
 
 #feature-container img {
     height: 40px;
+    margin: 5%;
     padding-left: 5%;
 }
 
@@ -295,6 +296,7 @@ background-color: turquoise;
 #sample-instractor-pricing-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .box {
@@ -410,17 +412,27 @@ q {
     color: cornflowerblue;
 }
 
-/* pricing and how to start */
+/* how to join */
 
-.textbox button {
-    width: 90px;
-    margin-left: 10%;
+#join-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 500px;
 }
 
-.textbox img {
-    height: auto;
-    width: 100px;
-    margin-left: auto;
+#join-container .left-wrap {
+    width: 50%;
+    background: url(./img/hands.jpg) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#join-container .right-wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* contact */
