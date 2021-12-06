@@ -105,7 +105,7 @@ nav a {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    height: 100px;
+    height: 80px;
     min-width: 10vh;
     /* padding: 0 50px; */
     border-bottom: 5px solid transparent;
@@ -166,7 +166,7 @@ nav a {
 }
 
 #dropbtn-pricing:hover:before {
-    content: "料金システム";
+    content: "受講料";
 }
 
 #dropbtn-join:hover:before {
@@ -593,9 +593,26 @@ q {
 }
 
 #copyEmailText {
-    width: 190px;
+    width: 150px;
+    font-size: .7em;
     background-color: transparent;
     border: none;
+}
+
+#copyEmailText:focus {
+    outline: none;
+}
+
+::selection {
+    background: transparent;
+}
+
+.emailwrap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #copyEmailBtn {
@@ -604,13 +621,17 @@ q {
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyEmailBtn:hover {
+    background-color: rgba(163, 144, 129, 0.438);
 }
 
 #copyEmailBtn img {
     width: 20px;
-    background-color: tomato;
-    /* display: flex; */
-    margin: none;
 }
 
 
@@ -651,4 +672,15 @@ footer img {
 .footer-link-wrap a {
     text-decoration: none;
     color: white;
+}
+
+#copyRight {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#copyRight a {
+    color: white;
+    font-size: .8em;
 }

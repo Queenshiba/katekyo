@@ -1,4 +1,3 @@
-
 // click slides
 
 let slideIndex = 1;
@@ -50,5 +49,10 @@ function copyEmailBtn() {
     navigator.clipboard.writeText(copyText.value);
 
     /* Alert the copied text */
-    // alert("Copied the text: " + copyText.value);
+    alert("Successfully Copied. メールアドレスがコピーされました。");
+
+
+
+
+
 }
