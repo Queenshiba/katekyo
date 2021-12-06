@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Sawarabi+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +8,47 @@
     /* font-family: 'Pacifico', cursive; */
 }
 
+
 /* landingPage-top */
+
 .top-line {
-    min-height: 2em;
+    min-height: 1em;
     width: 100%;
     background-color: #FF7978;
 }
 
+.more-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20em;
+    background-color: #FF7978;
+    border: none;
+    border: 2px solid #FF7978;
+    /* font-weight: bolder; */
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+}
+
+.more-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.more-btn:hover {
+    background-color: transparent;
+    color: #FF7978;
+    border: 2px solid white;
+    color: white;
+}
+
+.more-btn:hover a {
+    display: none
+}
+
+.more-btn:hover:before {
+    content: "詳細";
+}
 
 
 /* nav bar */
@@ -26,7 +59,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: rgba(163, 144, 129, 0.9);
-    height: 100px;
+    height: 80px;
 }
 
 nav a {
@@ -40,7 +73,6 @@ nav a {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 
 
 /* nav-menu-wrap Button */
@@ -79,7 +111,8 @@ nav a {
     border-bottom: 5px solid transparent;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
     border-bottom: 5px solid rgb(95, 95, 95);
 }
 
@@ -113,6 +146,7 @@ nav a {
     height: 30px;
 }
 
+
 /* switching eng to jp */
 
 .dropbtn:hover p {
@@ -143,10 +177,11 @@ nav a {
     content: "お問い合わせ";
 }
 
+
 /* landing page */
 
 #lp-laptop-container {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background: url(./img/jess-bailey-q10VITrVYUM-unsplash.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -173,7 +208,7 @@ nav a {
 }
 
 #lp-laptop-title-wrap h1 {
-    font-size: 4em;
+    font-size: 3em;
     /* text-shadow: 10px 5px 30px #65514cb0; */
 }
 
@@ -186,7 +221,6 @@ nav a {
     border: 2px solid #FF7978;
     /* font-weight: bolder; */
     font-size: 1.1em;
-
 }
 
 #contact-btn a {
@@ -217,14 +251,41 @@ nav a {
 }
 
 
+/* space */
+
+.spaceunderlp {
+    height: 20vh;
+}
+
+#spacewhite {
+    background-color: white;
+}
+
+#spacegray {
+    background-color: white;
+    background-color: rgba(163, 144, 129, 0.2);
+}
+
+
+/* title wrap */
+
+.title-wrap h2 {
+    font-size: 2em;
+    line-height: 20px;
+}
+
+.title-wrap h3 {
+    font-size: .5em;
+}
+
 
 /* service */
 
 #service-container {
-    height: 30vh;
+    height: 30vw;
     display: flex;
     flex-direction: row;
-    padding-top: 10em;
+    background-color: rgb(163, 144, 129);
 }
 
 #service-container .left-wrap {
@@ -233,7 +294,6 @@ nav a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: turquoise;
 }
 
 #service-container .right-wrap {
@@ -250,6 +310,7 @@ nav a {
     align-items: center;
     justify-content: center;
 }
+
 #service-container .title-wrap {
     height: 40%;
     display: flex;
@@ -258,16 +319,22 @@ nav a {
     justify-content: center;
 }
 
+
 /* features */
 
-
 #feature-container {
-    height: 80vh;
-    background-color: yellow;
+    height: max-content;
+    background-color: #FF7978;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 3em;
+}
+
+#feature-container .title-wrap {
+    padding: 5em 0;
 }
 
 #feature-wrap {
@@ -293,7 +360,6 @@ nav a {
     align-items: center;
     justify-content: center;
     height: 100px;
-
 }
 
 #feature-container img {
@@ -302,7 +368,34 @@ nav a {
     padding-left: 5%;
 }
 
+#feature-container .more-btn {
+    background-color: white;
+    border: 2px solid #FF7978;
+}
+
+#feature-container .more-btn a {
+    color: #FF7978;
+    text-decoration: none;
+}
+
+#feature-container .more-btn:hover {
+    background-color: transparent;
+    color: #FF7978;
+    border: 2px solid white;
+    color: white;
+}
+
+#feature-container .more-btn:hover a {
+    display: none
+}
+
+#feature-container .more-btn:hover:before {
+    content: "詳細";
+}
+
+
 /* sample, instractor and pricing */
+
 #sample-instractor-pricing-container {
     display: flex;
     flex-direction: row;
@@ -310,17 +403,19 @@ nav a {
 }
 
 .box {
-    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    width: 28%;
+    height: 28vw;
+    background-color: rgba(163, 144, 129, 0.466);
 }
 
 .box .title-wrap {
     height: 40%;
 }
+
 
 /* Slideshow container */
 
@@ -329,20 +424,20 @@ nav a {
     height: 400px;
 }
 
+
 /* Slides */
 
 .mySlides {
     /* display: none; */
     text-align: center;
     height: 400px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .mySlides>p {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     margin: 0 auto;
     display: flex;
@@ -352,9 +447,11 @@ nav a {
     font-style: italic;
 }
 
+
 /* Next & previous buttons */
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -368,6 +465,7 @@ nav a {
     user-select: none;
 }
 
+
 /* Position the "next button" to the right */
 
 .next {
@@ -376,12 +474,15 @@ nav a {
     border-radius: 3px 0 0 3px;
 }
 
+
 /* On hover, add a black background color with a little bit see-through */
 
-.prev:hover, .next:hover {
+.prev:hover,
+.next:hover {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
 }
+
 
 /* The dot/bullet/indicator container */
 
@@ -390,6 +491,7 @@ nav a {
     padding: 20px;
     background: #ddd;
 }
+
 
 /* The dots/bullets/indicators */
 
@@ -404,11 +506,14 @@ nav a {
     transition: background-color 0.6s ease;
 }
 
+
 /* Add a background color to the active dot/circle */
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     background-color: #717171;
 }
+
 
 /* Add an italic font style to all quotes */
 
@@ -416,25 +521,28 @@ q {
     font-style: italic;
 }
 
+
 /* Add a blue color to the author */
 
 .author {
-    color: cornflowerblue;
+    color: #717171;
 }
+
 
 /* how to join */
 
 #join-container {
     display: flex;
+    height: 30vw;
     justify-content: space-evenly;
-    height: 500px;
+    background-color: rgb(163, 144, 129);
 }
 
 #join-container .left-wrap {
     width: 50%;
     background: url(./img/hands.jpg) no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: left;
 }
 
 #join-container .right-wrap {
@@ -445,70 +553,102 @@ q {
     align-items: center;
 }
 
+#join-container .title-wrap {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* contact */
 
 .contact-container {
-    height: 500px;
-    width: 100vw;
-    background-color: beige;
+    height: 60vh;
+    background-color: rgba(163, 144, 129, 0.466);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contact-wrap, .emailwrap, .openEmail {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
+.contact-container .title-wrap {
+    padding-bottom: 5%;
 }
 
-/* 
-.contact-wrap h2 {
-    padding: 0 20px;
-} */
-
-.title-line h3 {
-    padding: 0 20px;
-    margin-left: 5%;
+#contact-btn {
+    margin-bottom: 3%;
 }
 
-.emailwrap {
-    width: 100%;
+.contact-container #contact-btn {
+    width: 150px;
+    height: 40px;
+    font-size: .8em;
 }
 
-#copyEmailText, .openEmail {
-    min-width: 200px;
-    text-align: center;
+#contact-btn:hover {
+    background-color: white;
+    color: #FF7978;
+}
+
+#copyEmailText {
+    width: 190px;
+    background-color: transparent;
     border: none;
-    height: 50px;
 }
 
 #copyEmailBtn {
-    background-color: hotpink;
+    background-color: rgb(163, 144, 129);
     border: none;
     height: 40px;
-    width: 50px;
+    width: 40px;
+    border-radius: 50%;
 }
+
+#copyEmailBtn img {
+    width: 20px;
+    background-color: tomato;
+    /* display: flex; */
+    margin: none;
+}
+
 
 /* footer */
 
 footer {
-    height: 30vh;
+    height: 40vh;
+    width: 100%;
     background-color: #FF7978;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.lineinfooter {
-    width: 100%;
-    height: 300px;
-    background-color: pink;
-    display: flex;
     flex-direction: column;
+    padding-bottom: 3em;
     justify-content: center;
     align-items: center;
+}
+
+footer img {
+    height: auto;
+    width: 70px;
+}
+
+#footer-link-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    padding: 50px 0;
+}
+
+.footer-link-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-link-wrap a {
+    text-decoration: none;
+    color: white;
 }
