@@ -178,6 +178,12 @@ nav a {
     content: "お問い合わせ";
 }
 
+@media (max-width: 400px) {
+    .dropdown  {
+        display: none;
+    }
+}
+
 
 /* landing page */
 
@@ -375,6 +381,14 @@ nav a {
     flex-direction: column;
 }
 
+.feature-list-text-wrap h4 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.feature-list-text-wrap p {
+    font-size: 1em;
+}
 #feature-container img {
     height: 40px;
     margin: 5%;
