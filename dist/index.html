@@ -20,7 +20,7 @@
     <div id="lp-laptop-container">
 
         <div class="top-line"></div>
-        <nav>
+        <nav id="navbar-lp">
             <!-- navbar -->
             <div class="nav-menu-wrap">
                 <div class="dropdown">
@@ -83,30 +83,32 @@
         </nav>
 
 <!-- navbar mobile -->
-<header class="header">
-    <nav class="navbar">
-        <a href="#" class="nav-logo">WebDev.</a>
-        <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+<div class="menu">
+    <nav class="menu__nav">
+        <ul class="menu__list r-list">
+            <li class="menu__group">
+                <a href="#top" class="menu__link r-link">Top</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Blog</a>
+            <li class="menu__group">
+                <a href="#about-whatIdo" class="menu__link r-link">Service</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
+            <li class="menu__group">
+                <a href="#about-mybusiness" class="menu__link r-link">My Business</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+
+            <li class="menu__group">
+                <a href="#contact-me" class="menu__link r-link">Contacts</a>
             </li>
         </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
     </nav>
-</header>
+    <button class="menu__toggle r-button" type="button">
+        <span class="menu__hamburger m-hamburger">
+            <span class="m-hamburger__label">
+                <span class="menu__toggle-hint screen-reader">Open menu</span>
+            </span>
+        </span>
+    </button>
+</div>
 
 
 
