@@ -64,7 +64,7 @@
 }
 
 #navbar-lp a {
-    color: white;
+    /* color: white; */
     text-decoration: none;
 }
 
@@ -453,7 +453,7 @@ SETTINGS
 
 :root {
     --colorWhite: #fff;
-    --colorMain: #FF7978;
+    --colorMain: gray;
     /* --colorMain: rgba(163, 144, 129, 0.9); */
     --menuCircleBackgroundColor: var(--colorMain);
     --menuHamburgerBackgroundColor: var(--colorWhite);
@@ -475,7 +475,7 @@ SETTINGS
 /* landing page */
 
 #lp-laptop-container {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background: url(./img/jess-bailey-q10VITrVYUM-unsplash.jpg) no-repeat;
     -webkit-background-size: cover;
@@ -697,7 +697,7 @@ SETTINGS
 }
 
 #feature-container img {
-    height: 40px;
+    height: 70px;
     margin: 5%;
     padding-left: 5%;
 }
@@ -962,7 +962,8 @@ q {
 /* contact */
 
 .contact-container {
-    height: 60vh;
+    height: max-content;
+    padding: 100px 0;
     background-color: rgba(163, 144, 129, 0.466);
     display: flex;
     flex-direction: column;
@@ -1035,7 +1036,7 @@ q {
 /* footer */
 
 footer {
-    height: 40vh;
+    height: max-content;
     width: 100%;
     background-color: #FF7978;
     display: flex;
@@ -1084,9 +1085,9 @@ footer img {
 
 @media (max-width: 600px) {
     #footer-link-container  {
-        font-size: 0.7em;
+        display: none;
     }
-    #footer-link-container a {
-        font-size: 0.7em;
+    footer {
+    padding: 50px 0;
     }
 }
