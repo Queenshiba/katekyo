@@ -804,7 +804,7 @@ SETTINGS
 /* Slides */
 
 .mySlides {
-    /* display: none; */
+    display: none;
     text-align: center;
     height: 400px;
     display: flex;
