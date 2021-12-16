@@ -43,11 +43,11 @@
     color: white;
 }
 
-.more-btn:hover a {
-    display: none
+.more-btn:hover p {
+    display: none;
 }
 
-.more-btn:hover:before {
+.more-btn:hover a:before {
     content: "詳細";
 }
 
@@ -723,9 +723,9 @@ SETTINGS
     display: none
 }
 
-#feature-container .more-btn:hover:before {
+/* #feature-container .more-btn:hover:before {
     content: "詳細";
-}
+} */
 
 @media (max-width: 600px) {
     #feature-wrap {
