@@ -506,34 +506,6 @@ SETTINGS
     /* text-shadow: 10px 5px 30px #65514cb0; */
 }
 
-#contact-btn {
-    width: 200px;
-    height: 50px;
-    border-radius: 20em;
-    background-color: #FF7978;
-    border: none;
-    border: 2px solid #FF7978;
-    /* font-weight: bolder; */
-    font-size: 1.1em;
-}
-
-#contact-btn a {
-    color: white;
-    text-decoration: none;
-}
-
-#contact-btn:hover {
-    background-color: transparent;
-    color: #FF7978;
-}
-
-#contact-btn:hover a {
-    display: none
-}
-
-#contact-btn:hover:before {
-    content: "Email KATEKYO";
-}
 
 .logo img {
     height: 80px;
@@ -941,18 +913,20 @@ q {
     #review-bottom {
         height: 0;
     }
+
     #join-container {
         display: flex;
         flex-direction: column;
         height: max-content;
     }
+
     #join-container .left-wrap {
         width: 100%;
         background: url(./img/hands.jpg) no-repeat;
         background-size: 100% auto;
         height: 300px;
     }
-    
+
     #join-container .right-wrap {
         width: 100%;
         height: 300px;
@@ -975,20 +949,69 @@ q {
     padding-bottom: 5%;
 }
 
-#contact-btn {
+.contact-btn {
     margin-bottom: 1%;
 }
 
-.contact-container #contact-btn {
+.contact-container .contact-btn {
     width: 150px;
     height: 40px;
     font-size: .8em;
 }
 
-#contact-btn:hover {
+.contact-btn:hover {
     background-color: white;
     color: #FF7978;
 }
+
+.more-btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20em;
+    background-color: #FF7978;
+    border: none;
+    border: 2px solid #FF7978;
+    /* font-weight: bolder; */
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+.contact-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 20em;
+    background-color: #FF7978;
+    border: none;
+    border: 2px solid #FF7978;
+    /* font-weight: bolder; */
+    font-size: 1.1em;
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: #FF7978;
+}
+
+.contact-btn:hover p {
+    display: none;
+}
+
+.contact-btn:hover:before {
+    content: "Email KATEKYO";
+}
+
+
+
 
 #copyEmailText {
     width: 150px;
@@ -1084,10 +1107,11 @@ footer img {
 }
 
 @media (max-width: 600px) {
-    #footer-link-container  {
+    #footer-link-container {
         display: none;
     }
+
     footer {
-    padding: 50px 0;
+        padding: 50px 0;
     }
 }
