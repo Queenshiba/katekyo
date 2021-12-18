@@ -1002,14 +1002,14 @@ q {
     color: #FF7978;
 }
 
-.contact-btn:hover p {
-    display: none;
+.contact-btn:hover {
+    background-color: white;
+    color: #FF7978;
 }
+.contact-btn p:hover {
 
-.contact-btn:hover:before {
-    content: "Email KATEKYO";
+    color: #FF7978;
 }
-
 
 
 
