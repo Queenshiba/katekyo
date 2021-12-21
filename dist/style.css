@@ -909,6 +909,10 @@ q {
     justify-content: center;
 }
 
+#howtojoin-bottom {
+    height: 150px;
+}
+
 @media (max-width: 600px) {
     #review-bottom {
         height: 0;
@@ -932,6 +936,7 @@ q {
         height: 300px;
     }
 }
+
 
 /* contact */
 
@@ -1054,7 +1059,9 @@ q {
 #copyEmailBtn img {
     width: 15px;
 }
-
+#contact-bottom {
+    height: 150px;
+}
 
 /* footer */
 
