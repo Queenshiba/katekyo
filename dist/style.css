@@ -166,7 +166,7 @@
 }
 
 #dropbtn-pricing:hover:before {
-    content: "受講料";
+    content: "料金";
 }
 
 #dropbtn-join:hover:before {
@@ -528,7 +528,6 @@ SETTINGS
 }
 
 #spacegray {
-    background-color: white;
     background-color: rgba(163, 144, 129, 0.2);
 }
 
@@ -796,15 +795,15 @@ SETTINGS
     height: 40%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 870px) {
     #sample-instractor-pricing-container {
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
     .box {
-        width: 80%;
-        height: 80vw;
+        width: 60%;
+        height: 60vw;
         background-color: rgba(163, 144, 129, 0.466);
         margin: 1em 0;
     }
@@ -816,6 +815,7 @@ SETTINGS
 .slideshow-container {
     position: relative;
     height: 400px;
+    background-color: rgba(163, 144, 129, 0.2);
 }
 
 
@@ -1117,6 +1117,7 @@ footer {
 
 footer img {
     height: auto;
+    padding-top: 20px;
     width: 70px;
 }
 
