@@ -169,7 +169,7 @@
         content: "お問い合わせ";
     }
     
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         .dropdown {
             display: none;
         }
