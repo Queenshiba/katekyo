@@ -5,80 +5,6 @@
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
-#feature-container {
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
-}
-
-.top-title-wrap {
-    background-color: beige;
-    width: 100%;
-    padding-left: 10%;
-}
-
-.top-title-wrap a {
-    color: black;
-    padding: 0 10px;
-}
-
-.feature-wrap {
-    width: 90%;
-    align-items: center;
-    justify-self: center;
-}
-
-.img-right {
-    background-color: rebeccapurple;
-}
-
-.img-right>div {
-    background-color: brown;
-    width: 50%;
-}
-
-.img-right>img {
-    max-width: 40%;
-    height: auto;
-    padding: 5% 3%;
-}
-
-.img-left {
-    background-color: rosybrown;
-}
-
-.img-left>div {
-    background-color: brown;
-    width: 50%;
-}
-
-.img-left>img {
-    max-width: 40%;
-    height: auto;
-    padding: 5% 3%;
-}
-
-.path {
-    display: flex;
-    flex-direction: row;
-}
-
-.feature-text-wrap {
-    width: 50%;
-    padding-left: 5%;
-}
-
-.feature-text-wrap p {
-    padding-left: 5%;
-}
-
-.title {
-    width: 100%;
-    padding-left: 5%;
-    border-left: 5px solid black;
-}
 
 
 /* subpages title wraps */
@@ -159,3 +85,64 @@
 .service-list-wrap h3 {
     padding: 20px 0;
 }
+
+/* feature */
+#feature-container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    color: black;
+}
+.feature-wrap-img-right {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+}
+.feature-wrap-img-right > img {
+    width: auto;
+    height: 600px;
+    background-color: blueviolet;
+}
+.feature-wrap-img-left {
+    background-color: beige;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    width: 100%;
+    padding-left: 5%;
+    border-left: 5px solid black;
+}
+.top-title-wrap {
+    background-color: beige;
+    width: 100%;
+    padding-left: 10%;
+}
+
+.top-title-wrap a {
+    color: black;
+    padding: 0 10px;
+}
+
+
+
+.path {
+    display: flex;
+    flex-direction: row;
+}
+
+.feature-text-wrap {
+    width: 50%;
+    padding-left: 5%;
+}
+
+.feature-text-wrap p {
+    padding-left: 5%;
+}
+
