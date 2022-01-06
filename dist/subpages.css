@@ -144,12 +144,19 @@
         .title {
             width: 100%;
             padding-left: 5%;
+            padding-bottom: 5%;
             border-left: 5px solid black;
         }
         
         .feature-text-wrap {
-            width: 40%;
+            width: 50%;
+            padding-left: 5%;
         }
+        
+        .feature-text-wrap p {
+            padding: 0 5%;
+        }
+
         /* title group on top */
         
         .top-title-wrap {
@@ -167,11 +174,3 @@
             flex-direction: row;
         }
         
-        .feature-text-wrap {
-            width: 50%;
-            padding-left: 5%;
-        }
-        
-        .feature-text-wrap p {
-            padding-left: 5%;
-        }
