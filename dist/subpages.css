@@ -88,6 +88,7 @@
             align-items: center;
             justify-self: center;
             color: black;
+            padding-bottom: 200px;
         }
         
         .feature-wrap-img-right {
@@ -96,16 +97,11 @@
             flex-direction: row;
             justify-content: center;
             align-items: flex-start;
-            height: 300px;
             margin: 5% 0;
         }
         
-        .feature-wrap-img {
-            background-repeat: no-repeat;
-            background-size: 100% auto;
-            background-position: center;
-            width: 40%;
-            height: 100%;
+        .feature-wrap-img-right img {
+            height: 300px;
         }
         
         .feature-wrap-img-left {
@@ -114,31 +110,10 @@
             flex-direction: row;
             justify-content: center;
             align-items: flex-start;
+        }
+        
+        .feature-wrap-img-left img {
             height: 300px;
-        }
-        
-        #support {
-            background-image: url(./img/support.jpg);
-        }
-        
-        #review {
-            background-image: url(./img/review.jpg);
-        }
-        
-        #schedule {
-            background-image: url(./img/schedule.jpg);
-        }
-        
-        #lessonplan {
-            background-image: url(./img/lessonplan.jpg);
-        }
-        
-        #nofee {
-            background-image: url(/dist/img/nofee.jpg);
-        }
-        
-        #lessonterm {
-            background-image: url(/dist/img/lessonterm.jpg);
         }
         
         .title {
@@ -156,7 +131,48 @@
         .feature-text-wrap p {
             padding: 0 5%;
         }
-
+        
+        @media (max-width: 1000px) {
+            .feature-wrap-img-right {
+                flex-direction: column;
+                width: 100%;
+                height: max-content;
+                align-items: center;
+                margin-top: 5%;
+            }
+            .feature-wrap-img-left {
+                flex-direction: column-reverse;
+                width: 100%;
+                height: fit-content;
+                align-items: center;
+                margin-top: 5%;
+            }
+            .title {
+                font-size: 5vw;
+            }
+            .feature-wrap-img-right img {
+                margin-top: 5%;
+            }
+            .feature-wrap-img-left img {
+                margin-top: 5%;
+            }
+            .feature-text-wrap {
+                width: 90%;
+            }
+            .feature-text-wrap p,
+            li {
+                font-size: 3vw;
+            }
+        }
+        
+        @media (max-width: 430px) {
+            .feature-wrap-img-right img {
+                height: 200px;
+            }
+            .feature-wrap-img-left img {
+                height: 200px;
+            }
+        }
         /* title group on top */
         
         .top-title-wrap {
@@ -173,4 +189,3 @@
             display: flex;
             flex-direction: row;
         }
-        
