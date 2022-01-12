@@ -4,8 +4,9 @@
             font-family: 'Noto Serif JP', serif;
             font-family: 'Sawarabi Gothic', sans-serif;
         }
+
         /* subpages title wraps */
-        
+
         .subpage-title-container {
             display: flex;
             flex-direction: column;
@@ -13,75 +14,77 @@
             justify-content: center;
             padding: 30px 0;
         }
-        
+
         .subpage-path-wrap {
             display: flex;
             padding-left: 20px;
         }
-        
+
         .subpage-path-wrap p {
             padding: 0 10px;
         }
-        
+
         .subpage-title-container h3 {
             line-height: 15px;
             font-size: .8em;
         }
-        
+
         .subpage-title-container h2 {
             line-height: 20px;
             font-size: 2em;
             padding-bottom: 20px;
         }
-        
+
         .vertical-line {
             border-left: 3px solid black;
             height: 20px;
             margin: 10px 0;
         }
+
         /* service */
-        
+
         .service-container {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-items: center;
         }
-        
+
         .service-wrap {
             width: 90%;
             padding: 20px 0;
         }
-        
+
         .subtitle-wrap {
             display: flex;
             border-bottom: 2px solid #FF7978;
             width: 100%;
             flex-direction: column;
         }
-        
+
         .subtitles {
             padding-left: 10px;
             font-size: .7em;
             line-height: 15px;
         }
-        
+
         .triangle {
             width: 0px;
             height: 0px;
             border-top: 20px solid #FF7978;
             border-right: 20px solid transparent;
         }
-        
+
         .service-list-wrap {
             padding-left: 20px;
         }
-        
+
         .service-list-wrap h3 {
             padding: 20px 0;
         }
+
         /* feature */
-        
+
         #feature-container-subpage {
             display: flex;
             flex-direction: column;
@@ -89,7 +92,7 @@
             justify-self: center;
             color: black;
         }
-        
+
         .feature-wrap-img-right {
             width: 100%;
             display: flex;
@@ -99,7 +102,7 @@
             height: 300px;
             margin: 5% 0;
         }
-        
+
         .feature-wrap-img {
             background-repeat: no-repeat;
             background-size: 100% auto;
@@ -107,7 +110,7 @@
             width: 40%;
             height: 100%;
         }
-        
+
         .feature-wrap-img-left {
             width: 100%;
             display: flex;
@@ -116,61 +119,84 @@
             align-items: flex-start;
             height: 300px;
         }
-        
+
         #support {
             background-image: url(./img/support.jpg);
         }
-        
+
         #review {
             background-image: url(./img/review.jpg);
         }
-        
+
         #schedule {
             background-image: url(./img/schedule.jpg);
         }
-        
+
         #lessonplan {
             background-image: url(./img/lessonplan.jpg);
         }
-        
+
         #nofee {
             background-image: url(/dist/img/nofee.jpg);
         }
-        
+
         #lessonterm {
             background-image: url(/dist/img/lessonterm.jpg);
         }
-        
+
         .title {
             width: 100%;
             padding-left: 5%;
             margin-bottom: 5%;
             border-left: 5px solid black;
         }
-        
+
         .feature-text-wrap {
             width: 50%;
             padding-left: 5%;
         }
-        
+
         .feature-text-wrap p {
             padding: 0 5%;
         }
 
         /* title group on top */
-        
+
         .top-title-wrap {
             width: 100%;
             padding-left: 10%;
         }
-        
+
         .top-title-wrap a {
             color: black;
             padding: 0 10px;
         }
-        
+
         .path {
             display: flex;
             flex-direction: row;
         }
-        
+
+        /* before joining */
+        #beforejoining-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .beforejoining-list-wrap {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            margin: 2% 0;
+        }
+
+        .list-title-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #FF7978;
+            color: white;
+        }
