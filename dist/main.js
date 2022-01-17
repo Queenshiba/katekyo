@@ -1,3 +1,17 @@
+let morePricingBtn = document.getElementsByClassName('more-pricing-btn')
+
+for (let i = 0; i < morePricingBtn.length; i++) {
+    morePricingBtn[i].addEventListener('click', () => {
+        morePricingBtnTrigger()
+    })
+
+}
+
+function morePricingBtnTrigger() {
+    console.log('test')
+}
+
+// hamburger menu
 (function() {
     'use strict';
 
