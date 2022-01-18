@@ -1,18 +1,34 @@
+// pricing div show and hide
 let morePricingBtn = document.getElementsByClassName('more-pricing-btn')
-
 for (let i = 0; i < morePricingBtn.length; i++) {
     morePricingBtn[i].addEventListener('click', () => {
-        morePricingBtnTrigger()
+        console.log('morePricingBtn', i)
+        let morePricingBtnIndex = i
+        morePricingBtnTrigger(morePricingBtnIndex)
     })
-
 }
 
-function morePricingBtnTrigger() {
-    console.log('test')
+function morePricingBtnTrigger(morePricingBtnIndex) {
+// show and hide div
+    let pricingHiddenWrap = document.getElementsByClassName('pricing-hidden-wrap')
+
+    if (pricingHiddenWrap[morePricingBtnIndex].style.display === "block") {
+        pricingHiddenWrap[morePricingBtnIndex].style.display = "none";
+    } else {
+        pricingHiddenWrap[morePricingBtnIndex].style.display = "block";        
+    }
+    // swich btn more to close
+        let morePricingBtnMore = document.getElementsByClassName('more-pricing-btn-more')
+    if (morePricingBtnMore[morePricingBtnIndex].textContent === "More") {
+        morePricingBtnMore[morePricingBtnIndex].textContent = "×";
+    } else {
+    morePricingBtnMore[morePricingBtnIndex] .textContent= "More";
+        
+    }
 }
 
 // hamburger menu
-(function() {
+(function () {
     'use strict';
 
     class Menu {
