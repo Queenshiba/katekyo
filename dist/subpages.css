@@ -244,6 +244,7 @@
             justify-content: center;
             align-items: center;
             width: 28vw;
+            
         }
 
         #pricing-box-above {
@@ -253,6 +254,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 5%;
         }
 
         #pricing-box-above h3 {
