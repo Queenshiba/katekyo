@@ -230,25 +230,23 @@
         .pricing-container {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
+            width: 100%;
         }
 
         .pricing-box-wrap {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            align-items: center;
+            align-items: flex-start;
         }
 
         .pricing-box {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             width: 28vw;
-            background-color: aliceblue;
-            width: 100%;
+
         }
 
         #pricing-box-above {
@@ -257,6 +255,8 @@
             justify-content: center;
             align-items: center;
             padding-bottom: 5%;
+            width: 100%;
+            background-color: yellow;
         }
 
         #pricing-box-above h3 {
@@ -265,7 +265,7 @@
 
         .price-wrap {
             padding: 5% 0;
-        } 
+        }
 
         .price-wrap {
             display: flex;
@@ -322,7 +322,13 @@
             color: #FF7978;
         }
 
+        @media (min-width: 700px) {
+            
 
+            .more-pricing-btn {
+                display: none;
+            }
+        }
 
         @media (max-width: 700px) {
             .pricing-box-wrap {
@@ -332,8 +338,8 @@
                 align-items: center;
                 width: 80%;
             }
-            
-        .more-pricing-btn {
-            display: none;
-        }
+
+            .more-pricing-btn {
+                display: none;
+            }
         }
