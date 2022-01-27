@@ -1,5 +1,34 @@
+// pricing category btn show and hide
+let categoryWrapBtn = document.getElementsByClassName('categorywrap-btn')
+for (let i = 0; i < categoryWrapBtn.length; i++) {
+    categoryWrapBtn[i].addEventListener('click', () => {
+        console.log('categoryWrapBtn', i)
+        let categoryWrapBtnIndex = i
+        categoryWrapBtnTrigger(categoryWrapBtnIndex)
+    })
+}
 
-// pricing div show and hide
+function categoryWrapBtnTrigger(categoryWrapBtnIndex) {
+    // show and hide div
+        let pricingContentsWrap = document.getElementsByClassName('pricing-contents-wrap')
+    
+        if (pricingContentsWrap[categoryWrapBtnIndex].style.display === "block") {
+            pricingContentsWrap[categoryWrapBtnIndex].style.display = "none";
+        } else {
+            pricingContentsWrap[categoryWrapBtnIndex].style.display = "block";        
+        }
+        // swich btn more to close
+            let categorywrapBtnText = document.getElementsByClassName('categorywrap-btn-text')
+        if (categorywrapBtnText[categoryWrapBtnIndex].textContent === "⋁") {
+            categorywrapBtnText[categoryWrapBtnIndex].textContent = "∧";
+        } else {
+            categorywrapBtnText[categoryWrapBtnIndex] .textContent= "⋁";
+            
+        }
+    }
+
+
+// pricing btn div show and hide
 let morePricingBtn = document.getElementsByClassName('more-pricing-btn')
 for (let i = 0; i < morePricingBtn.length; i++) {
     morePricingBtn[i].addEventListener('click', () => {

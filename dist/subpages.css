@@ -246,6 +246,7 @@
             justify-content: center;
             align-items: center;
             width: 28vw;
+            background-color: greenyellow;
         }
 
         #pricing-box-above {
@@ -299,6 +300,27 @@
             padding: 0 20px;
         }
 
+        /* test */
+        .top-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: antiquewhite;
+        }
+
+        .top-list p {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gold;
+        }
+
+        .pricing-contents-wrap {
+            background-color: hotpink;
+            display: none;
+        }
+
         /* pricing button */
 
         .more-pricing-btn {
@@ -340,10 +362,11 @@
                 align-items: center;
 
             }
+
             .pricing-box {
                 width: 70vw;
                 margin: 5% 0;
-                border: violet solid 2px ;
+                border: violet solid 2px;
             }
 
         }
