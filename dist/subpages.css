@@ -235,16 +235,16 @@
         .choosingCourse-wrap {
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: space-evenly;
             align-items: flex-start;
         }
         .pricing-box-wrap {
-            width: 66%;
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-items: flex-start;
             justify-content: space-around;
-            background-color: lightsalmon;
         }
 
         .pricing-box {
@@ -261,17 +261,20 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding-bottom: 5%;
             width: 100%;
             background-color: yellow;
         }
 
         #pricing-box-above h3 {
-            padding: 10% 0 5% 0;
+            padding: 5% 0 ;
+            background-color: aqua;
+            width: 100%;
+            text-align: center;
         }
 
+
         .price-wrap {
-            padding: 5% 0;
+            padding: 15% 0;
         }
 
         .price-wrap {
@@ -306,67 +309,7 @@
             padding: 0 20px;
         }
 
-        /* groups of grades */
-
-        .groupsForGrade-wrap {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            width: 100%;
-        }
-        .pricing-indexTitle-wrap {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: khaki;
-            width: 34%;
-        }
-        .group-wrap-contents {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 66%;
-        }
-        .top-list {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: antiquewhite;
-            width: 100%;
-        }
-
-        .top-list p {
-            padding: 10px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: gold;
-        }
-
-
-        .pricing-contents-wrap {
-            width: 100%;
-            display: none;
-        }
-        .pricing-box-wrap-grade {
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            justify-content: space-around ;
-            background-color: blue;
-        }
-
-
-
-
-
-
-
-
-
-
+        
 
         /* pricing button */
 
