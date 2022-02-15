@@ -498,6 +498,7 @@ SETTINGS
     #spacegray {
         background-color: rgba(163, 144, 129, 0.2);
     }
+
     /* title wrap */
     
     .title-wrap h2 {
@@ -739,6 +740,7 @@ SETTINGS
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-bottom: 100px;
     }
     
     .box {
