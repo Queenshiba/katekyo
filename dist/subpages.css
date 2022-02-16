@@ -370,3 +370,30 @@
             }
 
         }
+
+        /* sample */
+        .class-sample-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .student-wrap {
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .student-wrap img {
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        .student-info-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
