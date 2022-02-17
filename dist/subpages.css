@@ -386,11 +386,21 @@
             align-items: center;
         }
 
+        .student-name-wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         .student-wrap img {
             height: 100px;
             background-color: white;
             border-radius: 50%;
+            margin: 15px 0;
         }
+
         .student-info-wrap {
             display: flex;
             flex-direction: column;
