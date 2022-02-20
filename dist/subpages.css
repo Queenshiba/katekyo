@@ -429,8 +429,11 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            width: 90%;
         }
-
+        .student-info-wrap p{
+            overflow-wrap: break-word;
+        }
         @media (max-width: 800px) {
             .class-sample-container {
                 display: flex;
