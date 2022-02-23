@@ -409,7 +409,6 @@
         }
 
         .student-detail-wrap {
-            background-color: #FF7978;
             display: flex;
             flex-direction: column;
             justify-content: start;
