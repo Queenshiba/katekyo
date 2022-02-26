@@ -269,12 +269,12 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            background-color: yellow;
+            background-color: rgba(163, 144, 129, .5);
         }
 
         .pricing-course-wrap {
             padding: 5% 0;
-            background-color: aqua;
+            background-color: #FF7978;
             width: 100%;
             text-align: center;
         }
