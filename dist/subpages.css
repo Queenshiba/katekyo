@@ -261,6 +261,7 @@
             align-items: center;
             width: 28vw;
             margin: 5% 0;
+            border-top: #FF7978 15px solid;
         }
 
         #pricing-box-above {
@@ -269,30 +270,31 @@
             justify-content: center;
             align-items: center;
             width: 100%;
-            background-color: rgba(163, 144, 129, .5);
+            background-color: rgba(163, 144, 129, .1);
         }
 
         .pricing-course-wrap {
             padding: 5% 0;
-            background-color: #FF7978;
             width: 100%;
             text-align: center;
         }
 
         .pricing-course-wrap h3 {
             line-height: 15px;
-            font-size: .7em;
+            font-size: .8em;
         }
 
         .pricing-course-wrap h2 {
             line-height: 20px;
-            font-size: 1.5em;
+            font-size: 1.7em;
         }
 
         .price-wrap {
             padding: 15% 0;
         }
-
+        .price-wrap h2{
+            font-size: 2.5em;
+        }
         .price-wrap {
             display: flex;
             flex-direction: column;
@@ -306,7 +308,7 @@
         }
 
         .pricing-box-below {
-            background-color: lightgray;
+            background-color: rgba(163, 144, 129, .3);
             display: flex;
             flex-direction: column;
             justify-content: center;
