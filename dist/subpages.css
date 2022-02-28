@@ -259,7 +259,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 28vw;
+            min-width: 28vw;
             margin: 5% 0;
             border-top: #FF7978 15px solid;
         }
@@ -292,9 +292,11 @@
         .price-wrap {
             padding: 15% 0;
         }
-        .price-wrap h2{
+
+        .price-wrap h2 {
             font-size: 2.5em;
         }
+
         .price-wrap {
             display: flex;
             flex-direction: column;
@@ -324,7 +326,7 @@
 
         .checkeditem-list img {
             height: 30px;
-            padding: 0 20px;
+            padding: 5px 20px;
         }
 
         .pricing-note-wrap {
@@ -363,6 +365,7 @@
             .more-pricing-btn {
                 display: none;
             }
+
         }
 
         @media (max-width: 700px) {
@@ -371,13 +374,12 @@
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
-
             }
+
 
             .pricing-box {
                 width: 70vw;
                 margin: 5% 0;
-                border: violet solid 2px;
             }
 
         }
