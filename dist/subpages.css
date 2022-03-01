@@ -333,6 +333,12 @@
             padding-left: 10%;
         }
 
+        #checkeditem-list-gray {
+            color: gray;
+            text-decoration: line-through;
+
+        }
+
 
         /* pricing button */
 
