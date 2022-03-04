@@ -483,20 +483,28 @@
         }
 
         .numincircle {
-            position: relative;
             background-color: #FF7978;
-            border: 2px solid #999;
+            /* border: 2px solid #999;
             border-radius: 100%;
             width: 90px;
-            line-height: 90px;
+            line-height: 90px; */
             text-align: center;
+            font-size: 4em;
+            width: 10%;
         }
 
         .img {
-            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
         }
 
         .content-wrap {
-            width: 50%;
-            margin-left: 2%;
+            width: 40%;
+            margin: 2% 0;
+        }
+
+        .content-wrap h2, p {
+            margin: 0 2%;
         }
