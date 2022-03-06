@@ -482,6 +482,10 @@
             align-items: center;
         }
 
+        .list-wrap img {
+            width: 200px;
+        }
+
         .numincircle {
             background-color: #FF7978;
             /* border: 2px solid #999;
