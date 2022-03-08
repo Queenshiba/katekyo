@@ -483,27 +483,30 @@
         }
 
         .list-wrap img {
-            width: 200px;
+            width: 100px;
         }
 
         .numincircle {
             background-color: #FF7978;
-            /* border: 2px solid #999;
-            border-radius: 100%;
-            width: 90px;
-            line-height: 90px; */
+            border-radius: 50%;
+            height: 130px;
+            line-height: 130px;
             text-align: center;
             font-size: 4em;
             width: 10%;
+            margin: 0 40px;
         }
 
         .img {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             width: 40%;
+            
         }
-
+        #img-left {
+            justify-content: flex-end;
+        }
         .content-wrap {
             width: 40%;
             margin: 2% 0;
