@@ -480,8 +480,11 @@
             width: 100%;
             justify-content: center;
             align-items: center;
+            height: 150px;
         }
-
+        .list-wrap h2{
+            border-bottom: #FF7978 5px solid;
+        }
         .list-wrap img {
             width: 100px;
         }
