@@ -314,14 +314,16 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
+            width: 100%;
         }
 
         .checkeditem-list {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
+            width: 100%;
         }
 
         .checkeditem-list img {
@@ -517,4 +519,5 @@
 
         .content-wrap h2, p {
             margin: 0 2%;
+            padding: 0 2%;
         }
