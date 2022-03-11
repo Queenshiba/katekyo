@@ -325,6 +325,9 @@ MENU STYLES
         padding: 1.5em;
         padding-left: 1em;
     }
+    .menu__group a {
+color: white;
+    }
     
     .menu__toggle {
         box-sizing: border-box;
@@ -539,6 +542,7 @@ SETTINGS
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
     }
     
     #service-container .title-wrap {
