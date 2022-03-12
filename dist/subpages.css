@@ -120,10 +120,11 @@
         }
 
         .title {
-            width: 100%;
+            width: 95%;
             padding-left: 5%;
             margin-bottom: 5%;
             border-left: 5px solid black;
+
         }
 
         .feature-text-wrap {
@@ -482,7 +483,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            height: 150px;
+            min-height: 150px;
         }
         .list-wrap h2{
             border-bottom: #FF7978 5px solid;
@@ -521,3 +522,15 @@
             margin: 0 2%;
             padding: 0 2%;
         }
+
+        @media (max-width: 800px) {
+            #list-warp-right {
+                flex-direction: column-reverse;
+
+            }
+            #img-left {
+                flex-direction: column;
+            }
+        }
+
+        /* teacher */
