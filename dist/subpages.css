@@ -475,6 +475,7 @@
         .howtostart-container {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         .list-wrap {
@@ -485,9 +486,11 @@
             align-items: center;
             min-height: 150px;
         }
-        .list-wrap h2{
+
+        .list-wrap h2 {
             border-bottom: #FF7978 5px solid;
         }
+
         .list-wrap img {
             width: 100px;
         }
@@ -495,11 +498,11 @@
         .numincircle {
             background-color: #FF7978;
             border-radius: 50%;
-            height: 130px;
-            line-height: 130px;
+            height: 2em;
+            line-height: 2em;
             text-align: center;
             font-size: 4em;
-            width: 10%;
+            width: 2em;
             margin: 0 40px;
         }
 
@@ -508,11 +511,13 @@
             align-items: center;
             justify-content: flex-start;
             width: 40%;
-            
+
         }
+
         #img-left {
             justify-content: flex-end;
         }
+
         .content-wrap {
             width: 40%;
             margin: 2% 0;
@@ -523,13 +528,31 @@
             padding: 0 2%;
         }
 
-        @media (max-width: 800px) {
+        .triangle {
+            border: solid #FF7978;
+            border-width: 0 1em 1em 0;
+            display: inline-block;
+            padding: 1em;
+            transform: rotate(45deg);
+        }
+
+
+        @media (max-width: 900px) {
+            .content-wrap {
+                width: 80%;
+            }
+
             #list-warp-right {
                 flex-direction: column-reverse;
-
             }
-            #img-left {
+
+            #oddnum-wrap {
                 flex-direction: column;
+            }
+
+            .img, #img-left {
+                justify-content: center;
+
             }
         }
 
@@ -542,9 +565,15 @@
             justify-content: center;
             width: 90%;
         }
-        .teacher-container h2{
+
+        .teacher-container h2 {
             margin-top: 10%;
         }
-        .teacher-container h2,h4,p{
+
+        .teacher-container>h2, h4 {
+            margin-left: 10%;
+        }
+
+        .teacher-detail {
             margin-left: 10%;
         }
