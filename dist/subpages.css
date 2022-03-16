@@ -484,7 +484,7 @@
             width: 100%;
             justify-content: center;
             align-items: center;
-            min-height: 150px;
+            min-height: 180px;
         }
 
         .list-wrap h2 {
@@ -532,7 +532,7 @@
             border: solid #FF7978;
             border-width: 0 1em 1em 0;
             display: inline-block;
-            padding: 1em;
+            padding: 1.5em;
             transform: rotate(45deg);
         }
 
@@ -552,7 +552,11 @@
 
             .img, #img-left {
                 justify-content: center;
-
+            }
+            .triangle {
+                border-width: 0 .5em .5em 0;
+            padding: 1em;
+            margin-bottom: 1em;
             }
         }
 
