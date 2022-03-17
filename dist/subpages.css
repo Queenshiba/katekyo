@@ -545,7 +545,12 @@
             #list-warp-right {
                 flex-direction: column-reverse;
             }
-
+            .numincircle {
+                height: 2em;
+                line-height: 2em;
+                width: 2em;
+                font-size: 2em;
+            }
             #oddnum-wrap {
                 flex-direction: column;
             }
@@ -553,10 +558,11 @@
             .img, #img-left {
                 justify-content: center;
             }
+
             .triangle {
                 border-width: 0 .5em .5em 0;
-            padding: 1em;
-            margin-bottom: 1em;
+                padding: 1em;
+                margin-bottom: 5em;
             }
         }
 
