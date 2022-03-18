@@ -1,1093 +1,1080 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Sawarabi+Gothic&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Serif JP', serif;
-    font-family: 'Sawarabi Gothic', sans-serif;
-    /* font-family: 'Pacifico', cursive; */
-}
-
-
-/* landingPage-top */
-
-.top-line {
-    min-height: 1em;
-    width: 100%;
-    background-color: #FF7978;
-}
-
-.more-btn {
-    width: 150px;
-    height: 40px;
-    border-radius: 20em;
-    background-color: #FF7978;
-    border: none;
-    border: 2px solid #FF7978;
-    /* font-weight: bolder; */
-    font-size: 1.1em;
-    color: white;
-    text-decoration: none;
-}
-
-.more-btn a {
-    color: white;
-    text-decoration: none;
-}
-
-.more-btn:hover {
-    background-color: transparent;
-    color: #FF7978;
-    border: 2px solid white;
-    color: white;
-}
-
-.more-btn:hover a {
-    display: none
-}
-
-.more-btn:hover:before {
-    content: "詳細";
-}
-
-
-/* nav bar */
-
-#navbar-lp {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(163, 144, 129, 0.9);
-    height: 80px;
-}
-
-#navbar-lp a {
-    /* color: white; */
-    text-decoration: none;
-}
-
-.nav-menu-wrap {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-
-/* nav-menu-wrap Button */
-
-.navbar {
-    overflow: hidden;
-    background-color: rgba(163, 144, 129, 0.9);
-}
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    /* padding: 14px 16px; */
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-    height: 80px;
-    min-width: 10vh;
-    /* padding: 0 50px; */
-    border-bottom: 5px solid transparent;
-}
-
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    border-bottom: 5px solid rgb(95, 95, 95);
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 170px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 20px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropbtn img {
-    height: 30px;
-}
-
-
-/* switching eng to jp */
-
-.dropbtn:hover p {
-    display: none;
-}
-
-.dropbtn:hover img {
-    display: none;
-}
-
-#dropbtn-about:hover:before {
-    content: "KATEKYOとは";
-}
-
-#dropbtn-case:hover:before {
-    content: "授業実例";
-}
-
-#dropbtn-pricing:hover:before {
-    content: "受講料";
-}
-
-#dropbtn-join:hover:before {
-    content: "始め方";
-}
-
-#dropbtn-contact:hover:before {
-    content: "お問い合わせ";
-}
-
-@media (max-width: 600px) {
-    .dropdown {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&family=Sawarabi+Gothic&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Serif JP', serif;
+        font-family: 'Sawarabi Gothic', sans-serif;
+        /* font-family: 'Pacifico', cursive; */
+    }
+    /* landingPage-top */
+    
+    .top-line {
+        min-height: 1em;
+        width: 100%;
+        background-color: #FF7978;
+    }
+    
+    .more-btn {
+        width: 150px;
+        height: 40px;
+        border-radius: 20em;
+        background-color: #FF7978;
+        border: none;
+        border: 2px solid #FF7978;
+        /* font-weight: bolder; */
+        font-size: 1.1em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .more-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .more-btn:hover {
+        background-color: transparent;
+        color: #FF7978;
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .more-btn:hover p {
         display: none;
     }
-}
-
-/* navbar mobile */
-/* The component will reset button browser styles */
-
-.r-button {
-    --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
-    --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
-    --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
-    --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
-    --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
-    --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
-    --uirButtonFontSize: var(--rButtonFontSize, inherit);
-    --uirButtonColor: var(--rButtonColor);
-    background-color: var(--uirButtonBackgroundColor);
-    padding: var(--uirButtonPadding);
-    border-width: var(--uirButtonBorderWidth);
-    border-style: var(--uirButtonBorderStyle);
-    border-color: var(--uirButtonBorderColor);
-    cursor: pointer;
-    font-family: var(--uirButtonFontFamily);
-    font-size: var(--uirButtonFontSize);
-}
-
-.r-button::-moz-focus-inner,
-.r-button[type="button"]::-moz-focus-inner,
-.r-button[type="reset"]::-moz-focus-inner,
-.r-button[type="submit"]::-moz-focus-inner {
-    /* Remove the inner border and padding in Firefox. */
-    border-style: none;
-    padding: 0;
-}
-
-
-/* The component will reset browser's styles of link */
-
-.r-link {
-    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
-    --uirLinkTextColor: var(--rLinkTextColor);
-    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
-    display: var(--uirLinkDisplay) !important;
-    color: var(--uirLinkTextColor) !important;
-    text-decoration: var(--uirLinkTextDecoration) !important;
-}
-
-
-/* The component will reset browser's styles of list */
-
-.r-list {
-    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
-    --uirListMarginTop: var(--rListMarginTop, 0);
-    --uirListMarginBottom: var(--rListMarginBottom, 0);
-    --uirListListStyle: var(--rListListStyle, none);
-    padding-left: var(--uirListPaddingLeft) !important;
-    margin-top: var(--uirListMarginTop) !important;
-    margin-bottom: var(--uirListMarginBottom) !important;
-    list-style: var(--uirListListStyle) !important;
-}
-
-
-/* Basic styles of the hamburger component */
-
-.m-hamburger {
-    --uiHamburgerThickness: var(--hamburgerThickness, 4px);
-    display: var(--hamburgerDisplay, inline-flex);
-    width: var(--hamburgerWidth, 28px);
-    height: var(--hamburgerHeight, 20px);
-    position: relative;
-}
-
-.m-hamburger::before,
-.m-hamburger::after,
-.m-hamburger__label {
-    width: 100%;
-    height: var(--uiHamburgerThickness);
-    border-radius: var(--hamburgerBorderRadius, 5px);
-    background-color: var(--hamburgerBackgroundColor, currentColor);
-    position: absolute;
-    left: 0;
-}
-
-.m-hamburger::before,
-.m-hamburger::after {
-    content: "";
-}
-
-.m-hamburger::before {
-    top: 0;
-}
-
-.m-hamburger::after {
-    bottom: 0;
-}
-
-.m-hamburger__label {
-    /* The calculation of middle hamburger button line position */
-    top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
-}
-
-
-/* helper to hide elements that are available only for screen readers. */
-
-.screen-reader {
-    width: var(--screenReaderWidth, 1px) !important;
-    height: var(--screenReaderHeight, 1px) !important;
-    padding: var(--screenReaderPadding, 0) !important;
-    border: var(--screenReaderBorder, none) !important;
-    position: var(--screenReaderPosition, absolute) !important;
-    clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
-    overflow: var(--screenReaderOverflow, hidden) !important;
-}
-
-
-/*
+    
+    .more-btn:hover a:before {
+        content: "詳細";
+    }
+    /* nav bar */
+    
+    #navbar-lp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(163, 144, 129, 0.9);
+        height: 80px;
+    }
+    
+    #navbar-lp a {
+        /* color: white; */
+        text-decoration: none;
+    }
+    
+    .nav-menu-wrap {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    /* nav-menu-wrap Button */
+    
+    .navbar {
+        overflow: hidden;
+        background-color: rgba(163, 144, 129, 0.9);
+    }
+    
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+    
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        /* padding: 14px 16px; */
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        height: 80px;
+        min-width: 10vh;
+        /* padding: 0 50px; */
+        border-bottom: 5px solid transparent;
+    }
+    
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        border-bottom: 5px solid rgb(95, 95, 95);
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 170px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 20px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropbtn img {
+        height: 30px;
+    }
+    /* switching eng to jp */
+    
+    .dropbtn:hover p {
+        display: none;
+    }
+    
+    .dropbtn:hover img {
+        display: none;
+    }
+    
+    #dropbtn-about:hover:before {
+        content: "KATEKYOとは";
+    }
+    
+    #dropbtn-case:hover:before {
+        content: "授業実例";
+    }
+    
+    #dropbtn-pricing:hover:before {
+        content: "料金";
+    }
+    
+    #dropbtn-join:hover:before {
+        content: "始め方";
+    }
+    
+    #dropbtn-contact:hover:before {
+        content: "お問い合わせ";
+    }
+    
+    @media (max-width: 900px) {
+        .dropdown {
+            display: none;
+        }
+    }
+    /* navbar mobile */
+    /* The component will reset button browser styles */
+    
+    .r-button {
+        --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+        --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+        --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+        --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
+        --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+        --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+        --uirButtonFontSize: var(--rButtonFontSize, inherit);
+        --uirButtonColor: var(--rButtonColor);
+        background-color: var(--uirButtonBackgroundColor);
+        padding: var(--uirButtonPadding);
+        border-width: var(--uirButtonBorderWidth);
+        border-style: var(--uirButtonBorderStyle);
+        border-color: var(--uirButtonBorderColor);
+        cursor: pointer;
+        font-family: var(--uirButtonFontFamily);
+        font-size: var(--uirButtonFontSize);
+    }
+    
+    .r-button::-moz-focus-inner,
+    .r-button[type="button"]::-moz-focus-inner,
+    .r-button[type="reset"]::-moz-focus-inner,
+    .r-button[type="submit"]::-moz-focus-inner {
+        /* Remove the inner border and padding in Firefox. */
+        border-style: none;
+        padding: 0;
+    }
+    /* The component will reset browser's styles of link */
+    
+    .r-link {
+        --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+        --uirLinkTextColor: var(--rLinkTextColor);
+        --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+        display: var(--uirLinkDisplay) !important;
+        color: var(--uirLinkTextColor) !important;
+        text-decoration: var(--uirLinkTextDecoration) !important;
+    }
+    /* The component will reset browser's styles of list */
+    
+    .r-list {
+        --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+        --uirListMarginTop: var(--rListMarginTop, 0);
+        --uirListMarginBottom: var(--rListMarginBottom, 0);
+        --uirListListStyle: var(--rListListStyle, none);
+        padding-left: var(--uirListPaddingLeft) !important;
+        margin-top: var(--uirListMarginTop) !important;
+        margin-bottom: var(--uirListMarginBottom) !important;
+        list-style: var(--uirListListStyle) !important;
+    }
+    /* Basic styles of the hamburger component */
+    
+    .m-hamburger {
+        --uiHamburgerThickness: var(--hamburgerThickness, 4px);
+        display: var(--hamburgerDisplay, inline-flex);
+        width: var(--hamburgerWidth, 28px);
+        height: var(--hamburgerHeight, 20px);
+        position: relative;
+    }
+    
+    .m-hamburger::before,
+    .m-hamburger::after,
+    .m-hamburger__label {
+        width: 100%;
+        height: var(--uiHamburgerThickness);
+        border-radius: var(--hamburgerBorderRadius, 5px);
+        background-color: var(--hamburgerBackgroundColor, currentColor);
+        position: absolute;
+        left: 0;
+    }
+    
+    .m-hamburger::before,
+    .m-hamburger::after {
+        content: "";
+    }
+    
+    .m-hamburger::before {
+        top: 0;
+    }
+    
+    .m-hamburger::after {
+        bottom: 0;
+    }
+    
+    .m-hamburger__label {
+        /* The calculation of middle hamburger button line position */
+        top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+    }
+    /* helper to hide elements that are available only for screen readers. */
+    
+    .screen-reader {
+        width: var(--screenReaderWidth, 1px) !important;
+        height: var(--screenReaderHeight, 1px) !important;
+        padding: var(--screenReaderPadding, 0) !important;
+        border: var(--screenReaderBorder, none) !important;
+        position: var(--screenReaderPosition, absolute) !important;
+        clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+        overflow: var(--screenReaderOverflow, hidden) !important;
+    }
+    /*
 =====
 MENU STYLES
 =====
 */
-
-.menu {
-    --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
-    --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
-    --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
-    --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
-    --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
-    --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
-    --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
-    --hamburgerWidth: var(--uiMenuHamburgerWidth);
-    --hamburgerHeight: var(--uiMenuHamburgerHeight);
-    --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: var(--menuZindex, 9998);
-}
-
-.menu__nav {
-    box-sizing: border-box;
-    width: 100%;
-    height: 0;
-    transition: opacity .2s ease-out;
-    opacity: 0;
-    display: flex;
-    align-items: flex-end;
-    z-index: 2;
-}
-
-.menu__list {
-    width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    color: white;
-}
-
-.menu__group {
-    padding: 1.5em;
-    padding-left: 1em;
-}
-
-.menu__toggle {
-    box-sizing: border-box;
-    width: var(--uiMenuCircleSize);
-    height: var(--uiMenuCircleHeight);
-    flex: none;
-    position: relative;
-}
-
-.menu__toggle::before {
-    /*
+    
+    .menu {
+        --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
+        --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
+        --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);
+        --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
+        --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
+        --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
+        --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+        --hamburgerWidth: var(--uiMenuHamburgerWidth);
+        --hamburgerHeight: var(--uiMenuHamburgerHeight);
+        --hamburgerBackgroundColor: var(--menuHamburgerBackgroundColor, #fff);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: var(--menuZindex, 9998);
+    }
+    
+    .menu__nav {
+        box-sizing: border-box;
+        width: 100%;
+        height: 0;
+        transition: opacity .2s ease-out;
+        opacity: 0;
+        display: flex;
+        align-items: flex-end;
+        z-index: 2;
+    }
+    
+    .menu__list {
+        width: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        color: white;
+    }
+    
+    .menu__group {
+        padding: 1.5em;
+        padding-left: 1em;
+    }
+    .menu__group a {
+color: white;
+    }
+    
+    .menu__toggle {
+        box-sizing: border-box;
+        width: var(--uiMenuCircleSize);
+        height: var(--uiMenuCircleHeight);
+        flex: none;
+        position: relative;
+    }
+    
+    .menu__toggle::before {
+        /*
   1. The font-size property is used to simplify calculations of the element's sizes and position
   2. The negative value for the bottom property need for hiding half of circle. 
   */
-    content: "";
-    width: 1em;
-    height: 1em;
-    font-size: var(--uiMenuCircleSize);
-    /* 1 */
-    background-color: var(--uiMenuCircleBackgroundColor);
-    border-radius: 50%;
-    position: absolute;
-    bottom: -.5em;
-    /* 2 */
-    left: calc(50% - .5em);
-    z-index: -1;
-    will-change: width, height;
-    transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
-}
-
-
-/* styles of hamburger's animation */
-
-.m-hamburger::before,
-.m-hamburger::after,
-.m-hamburger__label {
-    transition-timing-function: ease;
-    transition-duration: .15s;
-}
-
-.m-hamburger::before,
-.m-hamburger::after {
-    transition-property: transform;
-}
-
-.m-hamburger__label {
-    transition-property: transform, opacity;
-}
-
-
-/*
+        content: "";
+        width: 1em;
+        height: 1em;
+        font-size: var(--uiMenuCircleSize);
+        /* 1 */
+        background-color: var(--uiMenuCircleBackgroundColor);
+        border-radius: 50%;
+        position: absolute;
+        bottom: -.5em;
+        /* 2 */
+        left: calc(50% - .5em);
+        z-index: -1;
+        will-change: width, height;
+        transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98), height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+    }
+    /* styles of hamburger's animation */
+    
+    .m-hamburger::before,
+    .m-hamburger::after,
+    .m-hamburger__label {
+        transition-timing-function: ease;
+        transition-duration: .15s;
+    }
+    
+    .m-hamburger::before,
+    .m-hamburger::after {
+        transition-property: transform;
+    }
+    
+    .m-hamburger__label {
+        transition-property: transform, opacity;
+    }
+    /*
 =====
 MENU STATES
 =====
 */
-
-.menu__toggle:focus {
-    outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
-    outline-offset: var(--menuHaburgerOutlineOffset, 5px);
-}
-
-.menu_activated {
-    height: 100%;
-}
-
-.menu_activated .menu__nav {
-    flex-grow: 1;
-    opacity: 1;
-    will-change: opacity;
-    transition-duration: .2s;
-    transition-delay: .3s;
-}
-
-.menu_activated .menu__toggle::before {
-    width: 100vmax;
-    height: 100vmax;
-    transform: translate3d(-50vh, -50vh, 0) scale(5);
-    transition-duration: 1s;
-}
-
-.menu:not(.menu_activated) .menu__list {
-    display: none;
-}
-
-.menu_activated .m-hamburger::before {
-    top: 50%;
-    transform: translate3d(0, -50%, 0) rotate(45deg);
-}
-
-.menu_activated .m-hamburger::after {
-    transform: translate3d(0, -50%, 0) rotate(135deg);
-    top: 50%;
-}
-
-.menu_activated .m-hamburger__label {
-    transform: rotate(-45deg) translate3d(-.285em, -.3em, 0);
-    opacity: 0;
-}
-
-
-/*
+    
+    .menu__toggle:focus {
+        outline: var(--menuHaburgerOutlineOWidth, 2px) solid var(--menuHaburgerOutlineColor);
+        outline-offset: var(--menuHaburgerOutlineOffset, 5px);
+    }
+    
+    .menu_activated {
+        height: 100%;
+    }
+    
+    .menu_activated .menu__nav {
+        flex-grow: 1;
+        opacity: 1;
+        will-change: opacity;
+        transition-duration: .2s;
+        transition-delay: .3s;
+    }
+    
+    .menu_activated .menu__toggle::before {
+        width: 100vmax;
+        height: 100vmax;
+        transform: translate3d(-50vh, -50vh, 0) scale(5);
+        transition-duration: 1s;
+    }
+    
+    .menu:not(.menu_activated) .menu__list {
+        display: none;
+    }
+    
+    .menu_activated .m-hamburger::before {
+        top: 50%;
+        transform: translate3d(0, -50%, 0) rotate(45deg);
+    }
+    
+    .menu_activated .m-hamburger::after {
+        transform: translate3d(0, -50%, 0) rotate(135deg);
+        top: 50%;
+    }
+    
+    .menu_activated .m-hamburger__label {
+        transform: rotate(-45deg) translate3d(-.285em, -.3em, 0);
+        opacity: 0;
+    }
+    /*
 =====
 SETTINGS
 =====
 */
-
-:root {
-    --colorWhite: #fff;
-    --colorMain: gray;
-    /* --colorMain: rgba(163, 144, 129, 0.9); */
-    --menuCircleBackgroundColor: var(--colorMain);
-    --menuHamburgerBackgroundColor: var(--colorWhite);
-    --menuHaburgerOutlineColor: var(--colorMain);
-}
-
-.menu_activated {
-    --menuHaburgerOutlineColor: var(--colorWhite);
-}
-
-@media (min-width: 600px) {
-    .menu {
-        display: none;
+    
+     :root {
+        --colorWhite: #fff;
+        --colorMain: gray;
+        /* --colorMain: rgba(163, 144, 129, 0.9); */
+        --menuCircleBackgroundColor: var(--colorMain);
+        --menuHamburgerBackgroundColor: var(--colorWhite);
+        --menuHaburgerOutlineColor: var(--colorMain);
     }
-}
-
-
-
-/* landing page */
-
-#lp-laptop-container {
-    height: 90vh;
-    width: 100%;
-    background: url(./img/jess-bailey-q10VITrVYUM-unsplash.jpg) no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-}
-
-#lp-laptop-wrap {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    justify-content: center;
-    align-items: center;
-}
-
-#lp-laptop-title-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 40%;
-}
-
-#lp-laptop-title-wrap h1 {
-    font-size: 3em;
-    /* text-shadow: 10px 5px 30px #65514cb0; */
-}
-
-#contact-btn {
-    width: 200px;
-    height: 50px;
-    border-radius: 20em;
-    background-color: #FF7978;
-    border: none;
-    border: 2px solid #FF7978;
-    /* font-weight: bolder; */
-    font-size: 1.1em;
-}
-
-#contact-btn a {
-    color: white;
-    text-decoration: none;
-}
-
-#contact-btn:hover {
-    background-color: transparent;
-    color: #FF7978;
-}
-
-#contact-btn:hover a {
-    display: none
-}
-
-#contact-btn:hover:before {
-    content: "Email KATEKYO";
-}
-
-.logo img {
-    height: 80px;
-}
-
-.box img {
-    width: 70%;
-    height: auto;
-}
-
-
-/* space */
-
-.spaceunderlp {
-    height: 20vh;
-}
-
-#spacewhite {
-    background-color: white;
-}
-
-#spacegray {
-    background-color: white;
-    background-color: rgba(163, 144, 129, 0.2);
-}
-
-
-/* title wrap */
-
-.title-wrap h2 {
-    font-size: 2em;
-    line-height: 20px;
-}
-
-.title-wrap h3 {
-    font-size: .5em;
-}
-
-
-/* service */
-
-#service-container {
-    height: 30vw;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(163, 144, 129);
-}
-
-#service-container .left-wrap {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#service-container .right-wrap {
-    width: 50%;
-    background: url(./img/service.jpg) no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-left: 3em;
-}
-
-.title-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#service-container .title-wrap {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (max-width: 600px) {
-    #service-container {
-        flex-direction: column;
-        height: max-content;
+    
+    .menu_activated {
+        --menuHaburgerOutlineColor: var(--colorWhite);
     }
-
-    #service-container .left-wrap {
+    
+    @media (min-width: 600px) {
+        .menu {
+            display: none;
+        }
+    }
+    /* landing page */
+    
+    #lp-laptop-container {
+        height: 90vh;
         width: 100%;
-        height: 300px;
+        background: url(./img/lp-img-dark.jpg) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
     }
-
-    #service-container .right-wrap {
-        width: 100%;
-        background-position: center;
-        background-size: auto 100%;
-        height: 300px;
-        margin-left: 0;
-    }
-}
-
-/* features */
-
-#feature-container {
-    height: max-content;
-    background-color: #FF7978;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 3em;
-
-}
-
-#feature-container .title-wrap {
-    padding: 5em 0;
-}
-
-#feature-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-#feature-left {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-
-}
-
-#feature-right {
-    width: 45%;
-}
-
-.feature-list-wrap {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
-    height: 100px;
-}
-
-.feature-list-text-wrap {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.feature-list-text-wrap h4 {
-    font-size: 1.5em;
-    font-weight: bolder;
-    text-decoration: underline;
-}
-
-.feature-list-text-wrap p {
-    font-size: 1em;
-}
-
-#feature-container img {
-    height: 70px;
-    margin: 5%;
-    padding-left: 5%;
-}
-
-#feature-container .more-btn {
-    background-color: white;
-    border: 2px solid #FF7978;
-}
-
-#feature-container .more-btn a {
-    color: #FF7978;
-    text-decoration: none;
-}
-
-#feature-container .more-btn:hover {
-    background-color: transparent;
-    color: #FF7978;
-    border: 2px solid white;
-    color: white;
-}
-
-#feature-container .more-btn:hover a {
-    display: none
-}
-
-#feature-container .more-btn:hover:before {
-    content: "詳細";
-}
-
-@media (max-width: 600px) {
-    #feature-wrap {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .feature-list-wrap {
-        padding: 0;
-    }
-
-    #feature-left, #feature-right {
-        width: 100%;
-    }
-
-    #feature-container img {
-        height: 40px;
-        margin: 0;
-        padding: 0 20px;
-    }
-
-    .feature-list-text-wrap h4 {
-        font-size: 1.2em;
-    }
-
-    .feature-list-text-wrap p {
-        font-size: 0.8em;
-    }
-}
-
-/* sample, instractor and pricing */
-
-#sample-instractor-pricing-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 28%;
-    height: 28vw;
-    background-color: rgba(163, 144, 129, 0.466);
-}
-
-.box .title-wrap {
-    height: 40%;
-}
-
-@media (max-width: 600px) {
-    #sample-instractor-pricing-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .box {
-        width: 80%;
-        height: 80vw;
-        background-color: rgba(163, 144, 129, 0.466);
-        margin: 1em 0;
-    }
-}
-
-/* Slideshow container */
-
-.slideshow-container {
-    position: relative;
-    height: 400px;
-}
-
-
-/* Slides */
-
-.mySlides {
-    display: none;
-    text-align: center;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.mySlides>p {
-    font-size: 1em;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 60%;
-    font-style: italic;
-}
-
-
-/* Next & previous buttons */
-
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    color: #888;
-    font-weight: bold;
-    font-size: 50px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-
-.next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
-}
-
-
-/* The dot/bullet/indicator container */
-
-.dot-container {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-}
-
-
-/* The dots/bullets/indicators */
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-
-/* Add a background color to the active dot/circle */
-
-.active,
-.dot:hover {
-    background-color: #717171;
-}
-
-
-/* Add an italic font style to all quotes */
-
-q {
-    font-style: italic;
-}
-
-
-/* Add a blue color to the author */
-
-.author {
-    color: #717171;
-}
-
-
-/* how to join */
-
-#join-container {
-    display: flex;
-    height: 30vw;
-    justify-content: space-evenly;
-    background-color: rgb(163, 144, 129);
-}
-
-#join-container .left-wrap {
-    width: 50%;
-    background: url(./img/hands.jpg) no-repeat;
-    background-size: contain;
-    background-position: left;
-}
-
-#join-container .right-wrap {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#join-container .title-wrap {
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (max-width: 600px) {
-    #review-bottom {
-        height: 0;
-    }
-    #join-container {
+    
+    #lp-laptop-wrap {
         display: flex;
         flex-direction: column;
-        height: max-content;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
     }
-    #join-container .left-wrap {
+    
+    #lp-laptop-title-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        /* color: white; */
+    }
+    
+    #lp-laptop-title-wrap h1 {
+        font-size: 3em;
+        /* color: white; */
+    }
+    
+    .logo img {
+        height: 80px;
+    }
+    
+    .box img {
+        width: 70%;
+        height: auto;
+    }
+    /* space */
+    
+    .spaceunderlp {
+        height: 20vh;
+    }
+    
+    #spacewhite {
+        background-color: white;
+    }
+    
+    #spacegray {
+        background-color: rgba(163, 144, 129, 0.2);
+    }
+
+    /* title wrap */
+    
+    .title-wrap h2 {
+        font-size: 2em;
+        line-height: 20px;
+        
+    }
+    
+    .title-wrap h3 {
+        font-size: .9em;
+    }
+    /* service */
+    
+    #service-container {
+        height: 30vw;
+        display: flex;
+        flex-direction: row;
+        background-color: rgb(163, 144, 129);
+    }
+    
+    #service-container .left-wrap {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #service-container .right-wrap {
+        width: 50%;
+        background: url(./img/service.jpg) no-repeat;
+        background-size: contain;
+        background-position: right;
+        margin-left: 3em;
+    }
+    
+    .title-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    #service-container .title-wrap {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media (max-width: 600px) {
+        #service-container {
+            flex-direction: column;
+            height: max-content;
+        }
+        #service-container .left-wrap {
+            width: 100%;
+            height: 300px;
+        }
+        #service-container .right-wrap {
+            width: 100%;
+            background-position: center;
+            background-size: auto 100%;
+            height: 300px;
+            margin-left: 0;
+        }
+    }
+    /* features */
+    
+    #feature-container {
+        height: max-content;
+        background-color: #FF7978;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 3em;
+    }
+    
+    #feature-container .title-wrap {
+        padding: 5em 0;
+    }
+    
+    #feature-wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+    }
+    
+    #feature-left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #feature-right {
+        width: 50%;
+    }
+    
+    .feature-list-wrap {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        height: 100px;
+    }
+    
+    .feature-list-text-wrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .feature-list-text-wrap h4 {
+        font-size: 1.5em;
+        font-weight: bolder;
+        text-decoration: underline;
+    }
+    
+    .feature-list-text-wrap p {
+        font-size: 1em;
+    }
+    
+    #feature-container img {
+        height: 70px;
+        margin: 5%;
+        padding-left: 5%;
+    }
+    /* btn in feature */
+    
+    #feature-container .more-btn {
+        background-color: white;
+        border: 2px solid white;
+    }
+    
+    #feature-container .more-btn a {
+        color: #FF7978;
+        text-decoration: none;
+    }
+    
+    #more-btn-feature:hover {
+        background-color: #FF7978;
+        border: 2px solid white;
+    }
+    
+    #more-btn-feature:hover a:before {
+        content: "詳細";
+        color: white;
+    }
+    
+    @media (max-width: 1000px) {
+        .feature-list-text-wrap h4 {
+            font-size: 1.2em;
+        }
+        .feature-list-text-wrap p {
+            font-size: 0.8em;
+        }
+    }
+    
+    @media (max-width: 870px) {
+        #feature-wrap {
+            flex-direction: column;
+            width: 100%;
+        }
+        #doubleLines-feature-list-wrap {
+            padding: 20px 0;
+        }
+        .feature-list-wrap {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #feature-left,
+        #feature-right {
+            width: 100%;
+            padding-left: 20%;
+        }
+        #feature-container img {
+            height: 60px;
+        }
+        .feature-list-text-wrap h4 {
+            font-size: 1.5em;
+        }
+        .feature-list-text-wrap p {
+            font-size: 1em;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        #feature-left,
+        #feature-right {
+            width: 80%;
+            padding-left: 0;
+        }
+        .feature-list-wrap {
+            padding: 10px 0;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .feature-list-text-wrap h4 {
+            font-size: 1.3em;
+        }
+        .feature-list-text-wrap p {
+            font-size: .8em;
+        }
+        #feature-container img {
+            height: 50px;
+        }
+    }
+    
+    @media (max-width: 550px) {
+        #feature-left,
+        #feature-right {
+            width: 100%;
+            padding-left: 0;
+        }
+        .feature-list-text-wrap h4 {
+            font-size: 1.3em;
+        }
+        .feature-list-text-wrap p {
+            font-size: .8em;
+        }
+        #feature-container img {
+            height: 50px;
+            padding-left: 0;
+        }
+    }
+    /* sample, instractor and pricing */
+    
+    #sample-instractor-pricing-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 100px;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 28%;
+        height: 28vw;
+        background-color: rgba(163, 144, 129, 0.466);
+    }
+    
+    .box .title-wrap {
+        height: 40%;
+    }
+    
+    @media (max-width: 870px) {
+        #sample-instractor-pricing-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .box {
+            width: 60%;
+            height: 60vw;
+            background-color: rgba(163, 144, 129, 0.466);
+            margin: 1em 0;
+        }
+    }
+    /* Slideshow container */
+    
+    .slideshow-container {
+        position: relative;
+        height: 400px;
+        background-color: rgba(163, 144, 129, 0.2);
+    }
+    /* Slides */
+    
+    .mySlides {
+        display: none;
+        text-align: center;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .mySlides>p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        font-style: italic;
+    }
+    /* Next & previous buttons */
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 50px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    /* Position the "next button" to the right */
+    
+    .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+    }
+    /* The dot/bullet/indicator container */
+    
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #ddd;
+    }
+    /* The dots/bullets/indicators */
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    /* Add a background color to the active dot/circle */
+    
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+    /* Add an italic font style to all quotes */
+    
+    q {
+        font-style: italic;
+    }
+    /* Add a blue color to the author */
+    
+    .author {
+        color: #717171;
+    }
+    /* how to join */
+    
+    #join-container {
+        display: flex;
+        height: 30vw;
+        justify-content: space-evenly;
+        background-color: rgb(163, 144, 129);
+    }
+    
+    #join-container .left-wrap {
+        width: 50%;
         background: url(./img/hands.jpg) no-repeat;
-        background-size: 100% auto;
-        height: 300px;
+        background-size: contain;
+        background-position: left;
     }
     
     #join-container .right-wrap {
-        width: 100%;
-        height: 300px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
-
-/* contact */
-
-.contact-container {
-    height: max-content;
-    padding: 100px 0;
-    background-color: rgba(163, 144, 129, 0.466);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-container .title-wrap {
-    padding-bottom: 5%;
-}
-
-#contact-btn {
-    margin-bottom: 1%;
-}
-
-.contact-container #contact-btn {
-    width: 150px;
-    height: 40px;
-    font-size: .8em;
-}
-
-#contact-btn:hover {
-    background-color: white;
-    color: #FF7978;
-}
-
-#copyEmailText {
-    width: 150px;
-    font-size: .7em;
-    background-color: transparent;
-    border: none;
-}
-
-#copyEmailText:focus {
-    outline: none;
-}
-
-::selection {
-    background: transparent;
-}
-
-.emailwrap {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#copyEmailBtn {
-    background-color: rgb(163, 144, 129);
-    border: none;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#copyEmailBtn:hover {
-    background-color: rgba(163, 144, 129, 0.438);
-}
-
-#copyEmailBtn img {
-    width: 15px;
-}
-
-
-/* footer */
-
-footer {
-    height: max-content;
-    width: 100%;
-    background-color: #FF7978;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 3em;
-    justify-content: center;
-    align-items: center;
-}
-
-footer img {
-    height: auto;
-    width: 70px;
-}
-
-#footer-link-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    font-size: 1em;
-    padding: 50px 0;
-}
-
-.footer-link-wrap {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-}
-
-.footer-link-wrap a {
-    text-decoration: none;
-    color: white;
-}
-
-#copyRight {
-    display: flex;
-    flex-direction: row;
-    color: white;
-}
-
-#copyRight a {
-    color: white;
-    font-size: .8em;
-}
-
-@media (max-width: 600px) {
-    #footer-link-container  {
+    
+    #join-container .title-wrap {
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #howtojoin-bottom {
+        height: 150px;
+    }
+    
+    @media (max-width: 600px) {
+        #review-bottom {
+            height: 0;
+        }
+        #join-container {
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+        }
+        #join-container .left-wrap {
+            width: 100%;
+            background: url(./img/hands.jpg) no-repeat;
+            background-size: 100% auto;
+            height: 300px;
+        }
+        #join-container .right-wrap {
+            width: 100%;
+            height: 300px;
+        }
+    }
+    /* contact */
+    
+    .contact-container {
+        height: max-content;
+        padding: 100px 0;
+        background-color: rgba(163, 144, 129, 0.466);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-container .title-wrap {
+        padding-bottom: 5%;
+    }
+    
+    .contact-btn {
+        width: 150px;
+        height: 40px;
+        border-radius: 20em;
+        background-color: #FF7978;
+        border: none;
+        border: 2px solid #FF7978;
+        /* font-weight: bolder; */
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .contact-btn a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .contact-btn:hover {
+        background-color: transparent;
+        border: 2px solid white;
+        color: #FF7978;
+    }
+    
+    .contact-btn:hover p {
         display: none;
     }
-    footer {
-    padding: 50px 0;
+    
+    .contact-btn:hover a:before {
+        content: "お問い合わせ";
     }
-}
+    /* copyEmail */
+    
+    #copyEmailText {
+        width: 150px;
+        font-size: .7em;
+        background-color: transparent;
+        border: none;
+    }
+    
+    #copyEmailText:focus {
+        outline: none;
+    }
+    
+     ::selection {
+        background: transparent;
+    }
+    
+    .emailwrap {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #copyEmailBtn {
+        background-color: rgb(163, 144, 129);
+        border: none;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #copyEmailBtn:hover {
+        background-color: rgba(163, 144, 129, 0.438);
+    }
+    
+    #copyEmailBtn img {
+        width: 15px;
+    }
+    
+    #contact-bottom {
+        height: 150px;
+    }
+    /* footer */
+    
+    footer {
+        height: max-content;
+        width: 100%;
+        background-color: #FF7978;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3em;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer img {
+        height: auto;
+        padding-top: 20px;
+        width: 70px;
+    }
+    
+    #footer-link-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 1em;
+        padding: 50px 0;
+    }
+    
+    .footer-link-wrap {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    .footer-link-wrap a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #copyRight {
+        display: flex;
+        flex-direction: row;
+        color: white;
+    }
+    
+    #copyRight a {
+        color: white;
+        font-size: .8em;
+    }
+    
+    @media (max-width: 600px) {
+        #footer-link-container {
+            display: none;
+        }
+        footer {
+            padding: 50px 0;
+        }
+    }

@@ -1,4 +1,64 @@
-(function() {
+// pricing category btn show and hide
+let categoryWrapBtn = document.getElementsByClassName('categorywrap-btn')
+for (let i = 0; i < categoryWrapBtn.length; i++) {
+    categoryWrapBtn[i].addEventListener('click', () => {
+        console.log('categoryWrapBtn', i)
+        let categoryWrapBtnIndex = i
+        categoryWrapBtnTrigger(categoryWrapBtnIndex)
+    })
+}
+
+function categoryWrapBtnTrigger(categoryWrapBtnIndex) {
+    // show and hide div
+        let pricingContentsWrap = document.getElementsByClassName('pricing-contents-wrap')
+    
+        if (pricingContentsWrap[categoryWrapBtnIndex].style.display === "block") {
+            pricingContentsWrap[categoryWrapBtnIndex].style.display = "none";
+        } else {
+            pricingContentsWrap[categoryWrapBtnIndex].style.display = "block";        
+        }
+        // swich btn more to close
+            let categorywrapBtnText = document.getElementsByClassName('categorywrap-btn-text')
+        if (categorywrapBtnText[categoryWrapBtnIndex].textContent === "⋁") {
+            categorywrapBtnText[categoryWrapBtnIndex].textContent = "∧";
+        } else {
+            categorywrapBtnText[categoryWrapBtnIndex] .textContent= "⋁";
+            
+        }
+    }
+
+
+// pricing btn div show and hide
+let morePricingBtn = document.getElementsByClassName('more-pricing-btn')
+for (let i = 0; i < morePricingBtn.length; i++) {
+    morePricingBtn[i].addEventListener('click', () => {
+        console.log('morePricingBtn', i)
+        let morePricingBtnIndex = i
+        morePricingBtnTrigger(morePricingBtnIndex)
+    })
+}
+
+function morePricingBtnTrigger(morePricingBtnIndex) {
+// show and hide div
+    let pricingHiddenWrap = document.getElementsByClassName('pricing-hidden-wrap')
+
+    if (pricingHiddenWrap[morePricingBtnIndex].style.display === "block") {
+        pricingHiddenWrap[morePricingBtnIndex].style.display = "none";
+    } else {
+        pricingHiddenWrap[morePricingBtnIndex].style.display = "block";        
+    }
+    // swich btn more to close
+        let morePricingBtnMore = document.getElementsByClassName('more-pricing-btn-more')
+    if (morePricingBtnMore[morePricingBtnIndex].textContent === "More") {
+        morePricingBtnMore[morePricingBtnIndex].textContent = "×";
+    } else {
+    morePricingBtnMore[morePricingBtnIndex] .textContent= "More";
+        
+    }
+}
+
+// hamburger menu
+(function () {
     'use strict';
 
     class Menu {
