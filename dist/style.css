@@ -451,7 +451,7 @@ SETTINGS
     #lp-laptop-container {
         height: 90vh;
         width: 100%;
-        background: url(./img/jess-bailey-q10VITrVYUM-unsplash.jpg) no-repeat;
+        background: url(./img/lp-img-dark.jpg) no-repeat;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -473,11 +473,12 @@ SETTINGS
         justify-content: center;
         align-items: center;
         height: 40%;
+        /* color: white; */
     }
     
     #lp-laptop-title-wrap h1 {
         font-size: 3em;
-        /* text-shadow: 10px 5px 30px #65514cb0; */
+        /* color: white; */
     }
     
     .logo img {
@@ -507,6 +508,7 @@ SETTINGS
     .title-wrap h2 {
         font-size: 2em;
         line-height: 20px;
+        
     }
     
     .title-wrap h3 {
