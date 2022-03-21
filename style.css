@@ -325,8 +325,9 @@ MENU STYLES
         padding: 1.5em;
         padding-left: 1em;
     }
+    
     .menu__group a {
-color: white;
+        color: white;
     }
     
     .menu__toggle {
@@ -502,13 +503,11 @@ SETTINGS
     #spacegray {
         background-color: rgba(163, 144, 129, 0.2);
     }
-
     /* title wrap */
     
     .title-wrap h2 {
         font-size: 2em;
         line-height: 20px;
-        
     }
     
     .title-wrap h3 {
@@ -544,7 +543,6 @@ SETTINGS
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
     }
     
     #service-container .title-wrap {
@@ -592,19 +590,19 @@ SETTINGS
     #feature-wrap {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         width: 100%;
     }
     
     #feature-left {
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column;
     }
     
     #feature-right {
-        width: 50%;
+        width: 45%;
     }
     
     .feature-list-wrap {
@@ -618,7 +616,7 @@ SETTINGS
     }
     
     .feature-list-text-wrap {
-        width: 100%;
+        /* width: 90%; */
         display: flex;
         flex-direction: column;
     }
@@ -629,14 +627,14 @@ SETTINGS
         text-decoration: underline;
     }
     
-    .feature-list-text-wrap p {
+    .feature-list-text-wrap>p {
         font-size: 1em;
     }
     
     #feature-container img {
         height: 70px;
         margin: 5%;
-        padding-left: 5%;
+        /* padding-left: 5%; */
     }
     /* btn in feature */
     
@@ -661,6 +659,9 @@ SETTINGS
     }
     
     @media (max-width: 1000px) {
+        .feature-list-text-wrap {
+            width: 100%;
+        }
         .feature-list-text-wrap h4 {
             font-size: 1.2em;
         }
@@ -678,7 +679,7 @@ SETTINGS
             padding: 20px 0;
         }
         .feature-list-wrap {
-            width: 100%;
+            width: auto;
             padding: 10px 0;
             display: flex;
             justify-content: center;
@@ -733,7 +734,7 @@ SETTINGS
             font-size: 1.3em;
         }
         .feature-list-text-wrap p {
-            font-size: .8em;
+            font-size: .9em;
         }
         #feature-container img {
             height: 50px;
