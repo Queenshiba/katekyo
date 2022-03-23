@@ -610,14 +610,27 @@
             margin-top: 10%;
         }
 
-        .teacher-container>h2{
+        .teacher-container>h2 {
             margin-left: 10%;
+            font-size: 1.8em;
         }
 
         .teacher-container>h4 {
             margin-left: 10%;
+
         }
 
         .teacher-detail {
             margin-left: 10%;
+            font-size: 1.5em;
+        }
+
+        @media (max-width: 900px) {
+            .teacher-container>h2 {
+                font-size: 1.5em;
+            }
+
+            .teacher-detail {
+                font-size: 1.2em;
+            }
         }
