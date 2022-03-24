@@ -61,6 +61,10 @@
             padding: 20px 0;
         }
 
+        .service-wrap p {
+            font-size: 1.2em;
+        }
+
         .subtitle-wrap {
             display: flex;
             border-bottom: 2px solid #FF7978;
@@ -140,7 +144,7 @@
         .feature-text-wrap p,
         li {
             padding: 0 3% 0 0;
-            font-size: 1em;
+            font-size: 1.2em;
         }
 
         @media (max-width: 1000px) {
@@ -177,7 +181,7 @@
             }
 
             .feature-text-wrap p {
-                font-size: .9em;
+                font-size: 1.1em;
             }
         }
 
@@ -631,6 +635,6 @@
             }
 
             .teacher-detail {
-                font-size: 2em;
+                font-size: 1.2em;
             }
         }
