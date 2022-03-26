@@ -477,7 +477,7 @@ SETTINGS
             display: none;
         }
     }
-    @media (max-width: 300px) {
+    @media (max-width: 400px) {
     .menu__group a {
         font-size: .8em;
         width: 50%;
